@@ -926,6 +926,15 @@
             <e p="zenject.asmdef" t="Include" />
           </e>
         </e>
+        <e p="Scripts" t="Include">
+          <e p="Config" t="Include">
+            <e p="config.asmdef" t="Include" />
+            <e p="Local" t="Include">
+              <e p="ILocalConfig.cs" t="Include" />
+              <e p="LocalConfig.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
             <e p="Editor" t="Include">
@@ -935,6 +944,7 @@
           </e>
         </e>
       </e>
+      <e p="config.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="QuizFramework.sln" t="IncludeFlat" />

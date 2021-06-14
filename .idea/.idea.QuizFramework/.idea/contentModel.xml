@@ -929,10 +929,16 @@
         <e p="Scripts" t="Include">
           <e p="Config" t="Include">
             <e p="config.asmdef" t="Include" />
+            <e p="IVersionControlChecker.cs" t="Include" />
             <e p="Local" t="Include">
               <e p="ILocalConfig.cs" t="Include" />
               <e p="LocalConfig.cs" t="Include" />
             </e>
+            <e p="Remote" t="Include">
+              <e p="GoogleConfigDownloader.cs" t="Include" />
+              <e p="IRemoteConfigDownloader.cs" t="Include" />
+            </e>
+            <e p="VersionControlChecker.cs" t="Include" />
           </e>
         </e>
         <e p="TutorialInfo" t="Include">

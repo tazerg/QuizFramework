@@ -20,6 +20,7 @@
       <Path>Temp</Path>
       <Path>UserSettings</Path>
       <Path>obj</Path>
+      <Path>token.json</Path>
     </explicitExcludes>
   </component>
 </project>

@@ -19,6 +19,7 @@ namespace QuizFramework.UnitTests
 
         private const string RealConfigSpreadsheetId = "1VLeAvWe5BWLM81129hkqF5pdZTwatAyVj1pHxZVYNOE";
         private const string RealVersionTabId = "0";
+        private const int RealRemoteVersion = 1;
 
         private readonly List<string> _mockedRemoteVersionConfig = new List<string>
         {
@@ -27,7 +28,6 @@ namespace QuizFramework.UnitTests
         
         private Mock<ILocalConfig> _mockLocalConfig;
         private Mock<ILocalStorage> _mockLocalStorage;
-
         private DiContainer _diContainer;
         private IVersionControlChecker _versionControlChecker;
         
@@ -50,6 +50,8 @@ namespace QuizFramework.UnitTests
             StaticContext.Clear();
             
             _versionControlChecker = null;
+            _mockLocalConfig = null;
+            _mockLocalStorage = null;
             _diContainer = null;
         }
 
@@ -69,6 +71,27 @@ namespace QuizFramework.UnitTests
             
             var actual = Task.Run(async () => await IsCorrectVersion()).GetAwaiter().GetResult();
             Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void TestGetRemoteVersion()
+        {
+            var mockRemoteConfigDownloader = new Mock<IRemoteConfigDownloader>();
+            _diContainer.Bind<IRemoteConfigDownloader>().FromInstance(mockRemoteConfigDownloader.Object).AsSingle();
+
+            _mockLocalConfig.SetupGet(x => x.VersionControlTabId).Returns(string.Empty);
+            _mockLocalStorage.Setup(x => x.GetLocalVersion()).Returns(It.IsAny<int>());
+            mockRemoteConfigDownloader.Setup(x => x.DownloadConfig(It.IsAny<string>()))
+                .Returns(Task.FromResult(_mockedRemoteVersionConfig));
+
+            _versionControlChecker = _diContainer.Resolve<IVersionControlChecker>();
+            
+            Assert.IsNull(_versionControlChecker.RemoteVersion);
+            Task.Run(async () => await IsCorrectVersion()).GetAwaiter().GetResult();
+
+            var actual = _versionControlChecker.RemoteVersion;
+            Assert.IsNotNull(actual);
+            Assert.AreEqual(RealRemoteVersion, actual.Value);
         }
 
         //Use UnityTest attribute because UnityWebRequest should use in main thread and current NUnit framework

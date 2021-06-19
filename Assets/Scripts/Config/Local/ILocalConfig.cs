@@ -3,6 +3,9 @@
     public interface ILocalConfig
     {
         string QuestionsSheetId { get; }
-        string VersionControlTabId { get; }
+        string QuestionsTabId { get; }
+        string VersionControlTabId { get; }        
+        byte AnswersStartIndex { get; }
+        byte AnswersEndIndex { get; }
     }
 }

@@ -12,6 +12,8 @@ namespace QuizFramework.Config
         private readonly ILocalConfig _localConfig;
         private readonly ILocalStorage _localStorage;
         private readonly IRemoteConfigDownloader _remoteConfigDownloader;
+
+        private int? _remoteVersion;
         
         public VersionControlChecker(ILocalConfig localConfig, ILocalStorage localStorage, IRemoteConfigDownloader remoteConfigDownloader)
         {
@@ -31,11 +33,14 @@ namespace QuizFramework.Config
                 return false;
             }
 
+            _remoteVersion = remoteVersion;
             var localVersion = _localStorage.GetLocalVersion();
-            return localVersion == remoteVersion;
+            return localVersion == _remoteVersion.Value;
         }
 
         #region IVersionControlChecker
+
+        int? IVersionControlChecker.RemoteVersion => _remoteVersion;
 
         async Task<bool> IVersionControlChecker.IsCorrectVersion()
         {

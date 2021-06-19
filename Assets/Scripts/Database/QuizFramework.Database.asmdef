@@ -1,13 +1,13 @@
 {
-    "name": "extensions",
+    "name": "QuizFramework.Database",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:7fb134fdc902e13428c468a1f7b092be",
+        "GUID:0979df21e3e659d4d885945826de97aa"
+    ],
     "includePlatforms": [
         "Android",
-        "Editor",
-        "iOS",
-        "WSA",
-        "WindowsStandalone64"
+        "Editor"
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

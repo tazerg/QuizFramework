@@ -1,8 +1,9 @@
 {
-    "name": "unittests",
+    "name": "QuizFramework.UnitTests",
     "rootNamespace": "",
     "references": [
         "GUID:7fb134fdc902e13428c468a1f7b092be",
+        "GUID:43523191a6237ce4fa8f40748a4bbd62",
         "GUID:0979df21e3e659d4d885945826de97aa",
         "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
     ],

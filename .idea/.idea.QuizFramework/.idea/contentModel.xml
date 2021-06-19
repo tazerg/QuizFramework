@@ -7,9 +7,8 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Plugins" t="Include">
-          <e p="Google" t="Include">
-            <e p="Google.Apis.Auth.xml" t="Include" />
-            <e p="Google.Apis.Sheets.v4.xml" t="Include" />
+          <e p="JsonDotNet" t="Include">
+            <e p="link.xml" t="Include" />
           </e>
           <e p="Zenject" t="Include">
             <e p="LICENSE.txt" t="Include" />
@@ -933,31 +932,42 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Config" t="Include">
-            <e p="config.asmdef" t="Include" />
             <e p="IVersionControlChecker.cs" t="Include" />
             <e p="Local" t="Include">
               <e p="ILocalConfig.cs" t="Include" />
               <e p="LocalConfig.cs" t="Include" />
             </e>
+            <e p="QuizFramework.Config.asmdef" t="Include" />
             <e p="Remote" t="Include">
               <e p="IRemoteConfigDownloader.cs" t="Include" />
               <e p="SpreadsheetConfigDownloader.cs" t="Include" />
             </e>
             <e p="VersionControlChecker.cs" t="Include" />
           </e>
+          <e p="Database" t="Include">
+            <e p="Questions" t="Include">
+              <e p="IQuestionDatabase.cs" t="Include" />
+              <e p="IQuestionDatabaseLoader.cs" t="Include" />
+              <e p="Question.cs" t="Include" />
+              <e p="QuestionDatabase.cs" t="Include" />
+              <e p="QuestionDatabaseLoader.cs" t="Include" />
+            </e>
+            <e p="QuizFramework.Database.asmdef" t="Include" />
+          </e>
           <e p="Extensions" t="Include">
             <e p="AsyncOperationExtension.cs" t="Include" />
-            <e p="extensions.asmdef" t="Include" />
+            <e p="QuizFramework.Extensions.asmdef" t="Include" />
           </e>
           <e p="Storage" t="Include">
             <e p="ILocalStorage.cs" t="Include" />
-            <e p="storage.asmdef" t="Include" />
+            <e p="QuizFramework.Storage.asmdef" t="Include" />
           </e>
           <e p="UnitTests" t="Include">
             <e p="Editor" t="Include">
+              <e p="QuestionDatabaseLoaderTests.cs" t="Include" />
               <e p="VersionControlCheckerTests.cs" t="Include" />
             </e>
-            <e p="unittests.asmdef" t="Include" />
+            <e p="QuizFramework.UnitTests.asmdef" t="Include" />
           </e>
         </e>
         <e p="TutorialInfo" t="Include">
@@ -969,14 +979,15 @@
           </e>
         </e>
       </e>
-      <e p="config.csproj" t="IncludeRecursive" />
-      <e p="extensions.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="QuizFramework.Config.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.Database.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.Extensions.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.sln" t="IncludeFlat" />
-      <e p="storage.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.Storage.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.UnitTests.csproj" t="IncludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
-      <e p="unittests.csproj" t="IncludeRecursive" />
       <e p="Zenject-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject-IntegrationTests-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject-IntegrationTests.csproj" t="IncludeRecursive" />

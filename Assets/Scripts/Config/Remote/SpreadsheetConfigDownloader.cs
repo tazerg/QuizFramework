@@ -4,26 +4,18 @@ using System.Threading.Tasks;
 using QuizFramework.Extensions;
 using UnityEngine.Networking;
 
-namespace QuizFramework.Config
+namespace QuizFramework.RemoteConfig
 {
     public class SpreadsheetConfigDownloader : IRemoteConfigDownloader
     {
         private const string SpreadsheetsPath = "https://docs.google.com/spreadsheets/d/";
         private const string ExportRequestPath = "/export?format=csv&gid=";
-        
-        private readonly ILocalConfig _localConfig;
-        
-        public SpreadsheetConfigDownloader(ILocalConfig localConfig)
-        {
-            _localConfig = localConfig;
-        }
-        
-        private async Task<List<string>> DownloadConfig(string tabId)
+
+        private async Task<List<string>> DownloadConfig(string configPath, string configId)
         {
             var result = new List<string>();
 
-            var sheetId = _localConfig.QuestionsSheetId;
-            var response = await SendRequest(sheetId, tabId);
+            var response = await SendRequest(configPath, configId);
             if (response.result != UnityWebRequest.Result.Success)
             {
                 return result;
@@ -50,9 +42,9 @@ namespace QuizFramework.Config
 
         #region IRemoteConfigDownloader
 
-        async Task<List<string>> IRemoteConfigDownloader.DownloadConfig(string tabId)
+        async Task<List<string>> IRemoteConfigDownloader.DownloadConfig(string configPath, string configId)
         {
-            return await DownloadConfig(tabId);
+            return await DownloadConfig(configPath, configId);
         }
 
         #endregion

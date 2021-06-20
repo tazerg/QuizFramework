@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Moq;
 using NUnit.Framework;
-using QuizFramework.Config;
 using QuizFramework.Database;
+using QuizFramework.RemoteConfig;
 using QuizFramework.Storage;
 using UnityEngine.TestTools;
 using Zenject;
@@ -94,7 +94,6 @@ namespace QuizFramework.UnitTests
             "2,Вопрос3,3,Ответ1,Ответ2,Ответ3"
         };
 
-        private Mock<ILocalConfig> _mockLocalConfig;
         private Mock<ILocalStorage> _mockLocalStorage;
         private DiContainer _diContainer;
         private IQuestionDatabaseLoader _questionDatabaseLoader;
@@ -104,10 +103,8 @@ namespace QuizFramework.UnitTests
         {
             _diContainer = new DiContainer(StaticContext.Container);
             
-            _mockLocalConfig = new Mock<ILocalConfig>();
             _mockLocalStorage = new Mock<ILocalStorage>();
             
-            _diContainer.BindInstance(_mockLocalConfig.Object).AsSingle();
             _diContainer.BindInstance(_mockLocalStorage.Object).AsSingle();
             _diContainer.Bind<IQuestionDatabaseLoader>().To<QuestionDatabaseLoader>().AsSingle();
         }
@@ -118,7 +115,6 @@ namespace QuizFramework.UnitTests
             StaticContext.Clear();
 
             _diContainer = null;
-            _mockLocalConfig = null;
             _mockLocalStorage = null;
             _questionDatabaseLoader = null;
         }
@@ -132,7 +128,7 @@ namespace QuizFramework.UnitTests
 
             _questionDatabaseLoader = _diContainer.Resolve<IQuestionDatabaseLoader>();
 
-            var actual = _questionDatabaseLoader.LoadFromLocal();
+            var actual = _questionDatabaseLoader.LoadFromLocal(_localQuestionDatabaseJson);
             Assert.NotNull(actual);
 
             var actualLoadCorrected = IsDatabaseLoadCorrected(actual);
@@ -145,16 +141,15 @@ namespace QuizFramework.UnitTests
             var mockRemoteConfigDownloader = new Mock<IRemoteConfigDownloader>();
             _diContainer.BindInstance(mockRemoteConfigDownloader.Object).AsSingle();
 
-            _mockLocalConfig.SetupGet(x => x.QuestionsSheetId).Returns(string.Empty);
-            _mockLocalConfig.SetupGet(x => x.QuestionsTabId).Returns(string.Empty);
-            _mockLocalConfig.SetupGet(x => x.AnswersStartIndex).Returns(AnswerStartIndex);
-            _mockLocalConfig.SetupGet(x => x.AnswersEndIndex).Returns(AnswerEndIndex);
-            mockRemoteConfigDownloader.Setup(x => x.DownloadConfig(It.IsAny<string>()))
+            mockRemoteConfigDownloader.Setup(x => x.DownloadConfig(It.IsAny<string>(), It.IsAny<string>()))
                 .Returns(Task.FromResult(_mockedRemoteQuestionDatabase));
             
             _questionDatabaseLoader = _diContainer.Resolve<IQuestionDatabaseLoader>();
 
-            var actual = Task.Run(async () => await _questionDatabaseLoader.LoadFromRemote()).GetAwaiter().GetResult();
+            var actual = Task
+                .Run(async () =>
+                    await _questionDatabaseLoader.LoadFromRemote(string.Empty, string.Empty, AnswerStartIndex,
+                        AnswerEndIndex)).GetAwaiter().GetResult();
             Assert.NotNull(actual);
 
             var actualLoadCorrected = IsDatabaseLoadCorrected(actual);
@@ -167,15 +162,11 @@ namespace QuizFramework.UnitTests
         public IEnumerator TestRealLoadFromRemote()
         {
             _diContainer.Bind<IRemoteConfigDownloader>().To<SpreadsheetConfigDownloader>().AsSingle();
-
-            _mockLocalConfig.SetupGet(x => x.QuestionsSheetId).Returns(RealConfigSpreadsheetId);
-            _mockLocalConfig.SetupGet(x => x.QuestionsTabId).Returns(RealQuestionTabId);
-            _mockLocalConfig.SetupGet(x => x.AnswersStartIndex).Returns(AnswerStartIndex);
-            _mockLocalConfig.SetupGet(x => x.AnswersEndIndex).Returns(AnswerEndIndex);
             
             _questionDatabaseLoader = _diContainer.Resolve<IQuestionDatabaseLoader>();
 
-            var task = _questionDatabaseLoader.LoadFromRemote();
+            var task = _questionDatabaseLoader.LoadFromRemote(RealConfigSpreadsheetId, RealQuestionTabId,
+                AnswerStartIndex, AnswerEndIndex);
             while (!task.IsCompleted)
             {
                 yield return null;

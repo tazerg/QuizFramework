@@ -4,8 +4,9 @@ using System.Threading.Tasks;
 using Moq;
 using Zenject;
 using NUnit.Framework;
-using QuizFramework.Config;
+using QuizFramework.RemoteConfig;
 using QuizFramework.Storage;
+using QuizFramework.VersionControl;
 using UnityEngine.TestTools;
 
 namespace QuizFramework.UnitTests
@@ -26,22 +27,19 @@ namespace QuizFramework.UnitTests
             "Version,1"
         };
         
-        private Mock<ILocalConfig> _mockLocalConfig;
         private Mock<ILocalStorage> _mockLocalStorage;
         private DiContainer _diContainer;
-        private IVersionControlChecker _versionControlChecker;
+        private IVersionChecker _versionChecker;
         
         [SetUp]
         public void OnSetup()
         {
             _diContainer = new DiContainer(StaticContext.Container);
 
-            _mockLocalConfig = new Mock<ILocalConfig>();
             _mockLocalStorage = new Mock<ILocalStorage>();
 
-            _diContainer.BindInstance(_mockLocalConfig.Object).AsSingle();
             _diContainer.BindInstance(_mockLocalStorage.Object).AsSingle();
-            _diContainer.Bind<IVersionControlChecker>().To<VersionControlChecker>().AsSingle();
+            _diContainer.Bind<IVersionChecker>().To<VersionChecker>().AsSingle();
         }
 
         [TearDown]
@@ -49,8 +47,7 @@ namespace QuizFramework.UnitTests
         {
             StaticContext.Clear();
             
-            _versionControlChecker = null;
-            _mockLocalConfig = null;
+            _versionChecker = null;
             _mockLocalStorage = null;
             _diContainer = null;
         }
@@ -62,12 +59,11 @@ namespace QuizFramework.UnitTests
             var mockRemoteConfigDownloader = new Mock<IRemoteConfigDownloader>();
             _diContainer.Bind<IRemoteConfigDownloader>().FromInstance(mockRemoteConfigDownloader.Object).AsSingle();
 
-            _mockLocalConfig.SetupGet(x => x.VersionControlTabId).Returns(string.Empty);
             _mockLocalStorage.Setup(x => x.GetLocalVersion()).Returns(installedVersion);
-            mockRemoteConfigDownloader.Setup(x => x.DownloadConfig(It.IsAny<string>()))
-                                        .Returns(Task.FromResult(_mockedRemoteVersionConfig));
+            mockRemoteConfigDownloader.Setup(x => x.DownloadConfig(It.IsAny<string>(), It.IsAny<string>()))
+                .Returns(Task.FromResult(_mockedRemoteVersionConfig));
 
-            _versionControlChecker = _diContainer.Resolve<IVersionControlChecker>();
+            _versionChecker = _diContainer.Resolve<IVersionChecker>();
             
             var actual = Task.Run(async () => await IsCorrectVersion()).GetAwaiter().GetResult();
             Assert.AreEqual(expected, actual);
@@ -79,17 +75,16 @@ namespace QuizFramework.UnitTests
             var mockRemoteConfigDownloader = new Mock<IRemoteConfigDownloader>();
             _diContainer.Bind<IRemoteConfigDownloader>().FromInstance(mockRemoteConfigDownloader.Object).AsSingle();
 
-            _mockLocalConfig.SetupGet(x => x.VersionControlTabId).Returns(string.Empty);
             _mockLocalStorage.Setup(x => x.GetLocalVersion()).Returns(It.IsAny<int>());
-            mockRemoteConfigDownloader.Setup(x => x.DownloadConfig(It.IsAny<string>()))
+            mockRemoteConfigDownloader.Setup(x => x.DownloadConfig(It.IsAny<string>(), It.IsAny<string>()))
                 .Returns(Task.FromResult(_mockedRemoteVersionConfig));
 
-            _versionControlChecker = _diContainer.Resolve<IVersionControlChecker>();
+            _versionChecker = _diContainer.Resolve<IVersionChecker>();
             
-            Assert.IsNull(_versionControlChecker.RemoteVersion);
+            Assert.IsNull(_versionChecker.RemoteVersion);
             Task.Run(async () => await IsCorrectVersion()).GetAwaiter().GetResult();
 
-            var actual = _versionControlChecker.RemoteVersion;
+            var actual = _versionChecker.RemoteVersion;
             Assert.IsNotNull(actual);
             Assert.AreEqual(RealRemoteVersion, actual.Value);
         }
@@ -128,16 +123,14 @@ namespace QuizFramework.UnitTests
         {
             _diContainer.Bind<IRemoteConfigDownloader>().To<SpreadsheetConfigDownloader>().AsSingle();
 
-            _mockLocalConfig.SetupGet(x => x.QuestionsSheetId).Returns(RealConfigSpreadsheetId);
-            _mockLocalConfig.SetupGet(x => x.VersionControlTabId).Returns(RealVersionTabId);
             _mockLocalStorage.Setup(x => x.GetLocalVersion()).Returns(installedVersion);
             
-            _versionControlChecker = _diContainer.Resolve<IVersionControlChecker>();
+            _versionChecker = _diContainer.Resolve<IVersionChecker>();
         }
 
         private async Task<bool> IsCorrectVersion()
         {
-            return await _versionControlChecker.IsCorrectVersion();
+            return await _versionChecker.IsCorrectVersion(RealConfigSpreadsheetId, RealVersionTabId);
         }
     }
 }

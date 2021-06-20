@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace QuizFramework.Config
+namespace QuizFramework.LocalConfig
 {
     [CreateAssetMenu(fileName = "LocalConfig", menuName = "Quiz/Local Config")]
     public class LocalConfig : ScriptableObject, ILocalConfig

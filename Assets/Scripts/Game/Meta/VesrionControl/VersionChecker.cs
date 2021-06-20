@@ -1,31 +1,29 @@
 ﻿using System.Threading.Tasks;
+using QuizFramework.RemoteConfig;
 using QuizFramework.Storage;
 using UnityEngine;
 
-namespace QuizFramework.Config
+namespace QuizFramework.VersionControl
 {
-    public class VersionControlChecker : IVersionControlChecker
+    public class VersionChecker : IVersionChecker
     {
         private const char Separator = ',';
         private const int VersionTabValueIndex = 1;
         
-        private readonly ILocalConfig _localConfig;
         private readonly ILocalStorage _localStorage;
         private readonly IRemoteConfigDownloader _remoteConfigDownloader;
 
         private int? _remoteVersion;
         
-        public VersionControlChecker(ILocalConfig localConfig, ILocalStorage localStorage, IRemoteConfigDownloader remoteConfigDownloader)
+        public VersionChecker(ILocalStorage localStorage, IRemoteConfigDownloader remoteConfigDownloader)
         {
-            _localConfig = localConfig;
             _localStorage = localStorage;
             _remoteConfigDownloader = remoteConfigDownloader;
         }
         
-        private async Task<bool> IsCorrectVersion()
+        private async Task<bool> IsCorrectVersion(string configPath, string versionConfigId)
         {
-            var versionTab = _localConfig.VersionControlTabId;
-            var remoteVersionTab = await _remoteConfigDownloader.DownloadConfig(versionTab);
+            var remoteVersionTab = await _remoteConfigDownloader.DownloadConfig(configPath, versionConfigId);
             var remoteVersionArray = remoteVersionTab[0].Split(Separator);
             if (!int.TryParse(remoteVersionArray[VersionTabValueIndex], out var remoteVersion))
             {
@@ -38,13 +36,13 @@ namespace QuizFramework.Config
             return localVersion == _remoteVersion.Value;
         }
 
-        #region IVersionControlChecker
+        #region IVersionChecker
 
-        int? IVersionControlChecker.RemoteVersion => _remoteVersion;
+        int? IVersionChecker.RemoteVersion => _remoteVersion;
 
-        async Task<bool> IVersionControlChecker.IsCorrectVersion()
+        async Task<bool> IVersionChecker.IsCorrectVersion(string configPath, string versionConfigId)
         {
-            return await IsCorrectVersion();
+            return await IsCorrectVersion(configPath, versionConfigId);
         }
 
         #endregion

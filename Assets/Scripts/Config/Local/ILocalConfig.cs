@@ -1,4 +1,4 @@
-﻿namespace QuizFramework.Config
+﻿namespace QuizFramework.LocalConfig
 {
     public interface ILocalConfig
     {

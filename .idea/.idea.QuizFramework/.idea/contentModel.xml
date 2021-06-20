@@ -932,17 +932,16 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Config" t="Include">
-            <e p="IVersionControlChecker.cs" t="Include" />
             <e p="Local" t="Include">
               <e p="ILocalConfig.cs" t="Include" />
               <e p="LocalConfig.cs" t="Include" />
+              <e p="QuizFramework.LocalConfig.asmdef" t="Include" />
             </e>
-            <e p="QuizFramework.Config.asmdef" t="Include" />
             <e p="Remote" t="Include">
               <e p="IRemoteConfigDownloader.cs" t="Include" />
+              <e p="QuizFramework.RemoteConfig.asmdef" t="Include" />
               <e p="SpreadsheetConfigDownloader.cs" t="Include" />
             </e>
-            <e p="VersionControlChecker.cs" t="Include" />
           </e>
           <e p="Database" t="Include">
             <e p="Questions" t="Include">
@@ -958,8 +957,23 @@
             <e p="AsyncOperationExtension.cs" t="Include" />
             <e p="QuizFramework.Extensions.asmdef" t="Include" />
           </e>
+          <e p="Game" t="Include">
+            <e p="Installers" t="Include">
+              <e p="BootstrapInstaller.cs" t="Include" />
+              <e p="ProjectRootInstaller.cs" t="Include" />
+              <e p="QuizFramework.Installers.asmdef" t="Include" />
+            </e>
+            <e p="Meta" t="Include">
+              <e p="VesrionControl" t="Include">
+                <e p="IVersionChecker.cs" t="Include" />
+                <e p="QuizFramework.VersionControl.asmdef" t="Include" />
+                <e p="VersionChecker.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Storage" t="Include">
             <e p="ILocalStorage.cs" t="Include" />
+            <e p="LocalStorage.cs" t="Include" />
             <e p="QuizFramework.Storage.asmdef" t="Include" />
           </e>
           <e p="UnitTests" t="Include">
@@ -968,6 +982,10 @@
               <e p="VersionControlCheckerTests.cs" t="Include" />
             </e>
             <e p="QuizFramework.UnitTests.asmdef" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="JsonSettingsUtils.cs" t="Include" />
+            <e p="QuizFramework.Utils.asmdef" t="Include" />
           </e>
         </e>
         <e p="TutorialInfo" t="Include">
@@ -981,12 +999,16 @@
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
-      <e p="QuizFramework.Config.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.Database.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.Extensions.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.Installers.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.LocalConfig.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.RemoteConfig.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.sln" t="IncludeFlat" />
       <e p="QuizFramework.Storage.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.UnitTests.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.Utils.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.VersionControl.csproj" t="IncludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="Zenject-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject-IntegrationTests-Editor.csproj" t="IncludeRecursive" />

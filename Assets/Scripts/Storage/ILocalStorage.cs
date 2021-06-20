@@ -1,10 +1,12 @@
-﻿namespace QuizFramework.Storage
+﻿using QuizFramework.Database;
+
+namespace QuizFramework.Storage
 {
     public interface ILocalStorage
     {
         int GetLocalVersion();
         string GetLocalQuestions();
-        void SaveToLocalVersion();
-        void SaveToLocalQuestions();
+        void SaveVersionToLocal(int version);
+        void SaveQuestionsToLocal(IQuestionDatabase questionDatabase);
     }
 }

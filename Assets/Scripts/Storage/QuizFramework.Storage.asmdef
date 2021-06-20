@@ -1,7 +1,10 @@
 {
     "name": "QuizFramework.Storage",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:43523191a6237ce4fa8f40748a4bbd62",
+        "GUID:b72e63c27582344459fe0d0db2f88fb3"
+    ],
     "includePlatforms": [
         "Android",
         "Editor"

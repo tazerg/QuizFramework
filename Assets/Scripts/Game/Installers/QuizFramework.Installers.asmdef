@@ -1,9 +1,13 @@
 {
-    "name": "QuizFramework.Database",
+    "name": "QuizFramework.Installers",
     "rootNamespace": "",
     "references": [
-        "GUID:b72e63c27582344459fe0d0db2f88fb3",
-        "GUID:6cd0581c3284fd642a6bca3fbfbb1901"
+        "GUID:43523191a6237ce4fa8f40748a4bbd62",
+        "GUID:8cd7bf165c1021744aa3f7a554abee54",
+        "GUID:6cd0581c3284fd642a6bca3fbfbb1901",
+        "GUID:0979df21e3e659d4d885945826de97aa",
+        "GUID:496165bec9114b04ebb1f107c5a67f92",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
     ],
     "includePlatforms": [
         "Android",

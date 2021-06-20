@@ -1,10 +1,7 @@
 {
-    "name": "QuizFramework.Config",
+    "name": "QuizFramework.LocalConfig",
     "rootNamespace": "",
-    "references": [
-        "GUID:0979df21e3e659d4d885945826de97aa",
-        "GUID:ad1e8952f20129144aa9613c73575a97"
-    ],
+    "references": [],
     "includePlatforms": [
         "Android",
         "Editor"

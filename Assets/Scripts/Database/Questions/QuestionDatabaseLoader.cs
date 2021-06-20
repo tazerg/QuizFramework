@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using QuizFramework.Config;
-using QuizFramework.Storage;
+using QuizFramework.RemoteConfig;
+using QuizFramework.Utils;
 
 namespace QuizFramework.Database
 {
@@ -16,36 +16,23 @@ namespace QuizFramework.Database
         private const byte QuestionValueIndex = 1;
         private const byte CorrectAnswerValueIndex = 2;
         
-        private readonly JsonSerializerSettings _jsonSettings = new JsonSerializerSettings
-        {
-            TypeNameHandling = TypeNameHandling.Auto,
-            ObjectCreationHandling = ObjectCreationHandling.Replace
-        };
-
-        private readonly ILocalStorage _localStorage;
-        private readonly ILocalConfig _localConfig;
         private readonly IRemoteConfigDownloader _remoteConfigDownloader;
         
-        public QuestionDatabaseLoader(ILocalStorage localStorage, ILocalConfig localConfig, 
-            IRemoteConfigDownloader remoteConfigDownloader)
+        public QuestionDatabaseLoader(IRemoteConfigDownloader remoteConfigDownloader)
         {
-            _localStorage = localStorage;
-            _localConfig = localConfig;
             _remoteConfigDownloader = remoteConfigDownloader;
         }
         
-        private IQuestionDatabase LoadFromLocal()
+        private IQuestionDatabase LoadFromLocal(string questionsJson)
         {
-            var localQuestions = _localStorage.GetLocalQuestions();
-            var questionDatabase = JsonConvert.DeserializeObject<QuestionDatabase>(localQuestions, _jsonSettings);
+            var questionDatabase = JsonConvert.DeserializeObject<QuestionDatabase>(questionsJson, JsonSettingsUtils.JsonSettings);
             questionDatabase.FillQuestionGroupsDict();
             return questionDatabase;
         }
 
-        private async Task<IQuestionDatabase> LoadFromRemote()
+        private async Task<IQuestionDatabase> LoadFromRemote(string configPath, string questionsConfigId, int answersStartIndex, int answersEndIndex)
         {
-            var questionsTabId = _localConfig.QuestionsTabId;
-            var questionsTab = await _remoteConfigDownloader.DownloadConfig(questionsTabId);
+            var questionsTab = await _remoteConfigDownloader.DownloadConfig(configPath, questionsConfigId);
             var questions = new List<Question>();
             for (var i = StartQuestionsRow; i < questionsTab.Count; i++)
             {
@@ -55,7 +42,7 @@ namespace QuizFramework.Database
                     QuestionsGroup = ushort.Parse(questionFields[QuestionGroupValueIndex]),
                     QuestionStr = questionFields[QuestionValueIndex],
                     IndexOfCorrectAnswer = (byte)(byte.Parse(questionFields[CorrectAnswerValueIndex]) - NumberToIndexSubtrahend),
-                    Answers = CollectAnswers(questionFields)
+                    Answers = CollectAnswers(questionFields, answersStartIndex, answersEndIndex)
                 };
                 questions.Add(question);
             }
@@ -64,10 +51,10 @@ namespace QuizFramework.Database
             return questionDatabase;
         }
 
-        private List<string> CollectAnswers(IReadOnlyList<string> questionFields)
+        private List<string> CollectAnswers(IReadOnlyList<string> questionFields, int answersStartIndex, int answersEndIndex)
         {
             var answers = new List<string>();
-            for (var i = _localConfig.AnswersStartIndex; i <= _localConfig.AnswersEndIndex; i++)
+            for (var i = answersStartIndex; i <= answersEndIndex; i++)
             {
                 answers.Add(questionFields[i]);
             }
@@ -77,14 +64,14 @@ namespace QuizFramework.Database
 
         #region IQuestionDatabaseLoader
 
-        IQuestionDatabase IQuestionDatabaseLoader.LoadFromLocal()
+        IQuestionDatabase IQuestionDatabaseLoader.LoadFromLocal(string questionsJson)
         {
-            return LoadFromLocal();
+            return LoadFromLocal(questionsJson);
         }
 
-        async Task<IQuestionDatabase> IQuestionDatabaseLoader.LoadFromRemote()
+        async Task<IQuestionDatabase> IQuestionDatabaseLoader.LoadFromRemote(string configPath, string questionsConfigId, int answersStartIndex, int answersEndIndex)
         {
-            return await LoadFromRemote();
+            return await LoadFromRemote(configPath, questionsConfigId, answersStartIndex, answersEndIndex);
         }
 
         #endregion

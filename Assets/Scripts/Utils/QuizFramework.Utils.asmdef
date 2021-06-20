@@ -1,10 +1,7 @@
 {
-    "name": "QuizFramework.Database",
+    "name": "QuizFramework.Utils",
     "rootNamespace": "",
-    "references": [
-        "GUID:b72e63c27582344459fe0d0db2f88fb3",
-        "GUID:6cd0581c3284fd642a6bca3fbfbb1901"
-    ],
+    "references": [],
     "includePlatforms": [
         "Android",
         "Editor"

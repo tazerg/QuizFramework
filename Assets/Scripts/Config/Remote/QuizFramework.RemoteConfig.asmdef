@@ -1,9 +1,8 @@
 {
-    "name": "QuizFramework.Database",
+    "name": "QuizFramework.RemoteConfig",
     "rootNamespace": "",
     "references": [
-        "GUID:b72e63c27582344459fe0d0db2f88fb3",
-        "GUID:6cd0581c3284fd642a6bca3fbfbb1901"
+        "GUID:ad1e8952f20129144aa9613c73575a97"
     ],
     "includePlatforms": [
         "Android",

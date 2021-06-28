@@ -964,11 +964,22 @@
               <e p="QuizFramework.Installers.asmdef" t="Include" />
             </e>
             <e p="Meta" t="Include">
+              <e p="Loading" t="Include">
+                <e p="MetaLoader.cs" t="Include" />
+                <e p="QuizFramework.Loading.asmdef" t="Include" />
+              </e>
               <e p="VesrionControl" t="Include">
                 <e p="IVersionChecker.cs" t="Include" />
                 <e p="QuizFramework.VersionControl.asmdef" t="Include" />
                 <e p="VersionChecker.cs" t="Include" />
               </e>
+            </e>
+            <e p="UI" t="Include">
+              <e p="LoadingVM" t="Include">
+                <e p="LoadingVM.cs" t="Include" />
+                <e p="Progressbar.cs" t="Include" />
+              </e>
+              <e p="QuizFramework.UI.asmdef" t="Include" />
             </e>
           </e>
           <e p="Storage" t="Include">
@@ -1002,10 +1013,12 @@
       <e p="QuizFramework.Database.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.Extensions.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.Installers.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.Loading.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.LocalConfig.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.RemoteConfig.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.sln" t="IncludeFlat" />
       <e p="QuizFramework.Storage.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.UI.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.UnitTests.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.Utils.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.VersionControl.csproj" t="IncludeRecursive" />

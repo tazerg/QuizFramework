@@ -13,6 +13,8 @@ namespace QuizFramework.Loading
 {
     public class MetaLoader : MonoBehaviour
     {
+        private const int FirstVersion = 1;
+        
         private LoadingVM _loadingVm;
         private DiContainer _projectContainer;
         
@@ -20,6 +22,7 @@ namespace QuizFramework.Loading
         private ILocalConfig _localConfig;
         private IQuestionDatabaseLoader _questionDatabaseLoader;
         private ILocalStorage _localStorage;
+        private ILocalQuestionsProvider _localQuestionsProvider;
 
         private DiContainer ProjectContainer
         {
@@ -34,7 +37,7 @@ namespace QuizFramework.Loading
         
         [Inject]
         public void Inject(LoadingVM loadingVm, IVersionChecker versionChecker, ILocalConfig localConfig, 
-            IQuestionDatabaseLoader questionDatabaseLoader, ILocalStorage localStorage)
+            IQuestionDatabaseLoader questionDatabaseLoader, ILocalStorage localStorage, ILocalQuestionsProvider localQuestionsProvider)
         {
             _loadingVm = loadingVm;
             
@@ -42,11 +45,35 @@ namespace QuizFramework.Loading
             _localConfig = localConfig;
             _questionDatabaseLoader = questionDatabaseLoader;
             _localStorage = localStorage;
+            _localQuestionsProvider = localQuestionsProvider;
         }
 
         private async void Start()
         {
+            await LoadMeta();
+            await SceneManager.LoadSceneAsync("Scenes/Main");
+        }
+
+        private async Task LoadMeta()
+        {
+            if (!_localStorage.HasLocalVersion())
+            {
+                await FirstLoadFlow();
+                return;
+            }
+            
             await LoadFlow();
+        }
+
+        private async Task FirstLoadFlow()
+        {
+            var localStoredQuestions = _localQuestionsProvider.GetLocalQuestions();
+
+            var questionDatabase = await _questionDatabaseLoader.LoadFromLocal(localStoredQuestions);
+            ProjectContainer.BindInstance(questionDatabase).AsSingle();
+            
+            _localStorage.SaveVersionToLocal(FirstVersion);
+            _localStorage.SaveQuestionsToLocal(questionDatabase);
         }
 
         private async Task LoadFlow()
@@ -60,8 +87,6 @@ namespace QuizFramework.Loading
 
             _loadingVm.Progressbar.Report(0.8f);
             _loadingVm.SetProgressStatus("Загружаем игру...");
-            
-            await SceneManager.LoadSceneAsync("Scenes/Main");
         }
 
         private async Task LoadQuestions(bool isCorrectVersion)
@@ -72,7 +97,7 @@ namespace QuizFramework.Loading
                 _loadingVm.SetProgressStatus("Загружаем вопросы...");
                 
                 var questionsJson = _localStorage.GetLocalQuestions();
-                var localQuestionDatabase = _questionDatabaseLoader.LoadFromLocal(questionsJson);
+                var localQuestionDatabase = await _questionDatabaseLoader.LoadFromLocal(questionsJson);
                 
                 ProjectContainer.BindInstance(localQuestionDatabase).AsSingle();
                 return;

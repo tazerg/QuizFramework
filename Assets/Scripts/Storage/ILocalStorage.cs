@@ -6,6 +6,7 @@ namespace QuizFramework.Storage
     {
         int GetLocalVersion();
         string GetLocalQuestions();
+        bool HasLocalVersion();
         void SaveVersionToLocal(int version);
         void SaveQuestionsToLocal(IQuestionDatabase questionDatabase);
     }

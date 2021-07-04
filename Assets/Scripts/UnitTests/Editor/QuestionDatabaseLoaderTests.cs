@@ -128,7 +128,9 @@ namespace QuizFramework.UnitTests
 
             _questionDatabaseLoader = _diContainer.Resolve<IQuestionDatabaseLoader>();
 
-            var actual = _questionDatabaseLoader.LoadFromLocal(_localQuestionDatabaseJson);
+            var actual = Task
+                .Run(async () => await _questionDatabaseLoader.LoadFromLocal(_localQuestionDatabaseJson))
+                .GetAwaiter().GetResult();
             Assert.NotNull(actual);
 
             var actualLoadCorrected = IsDatabaseLoadCorrected(actual);

@@ -23,9 +23,11 @@ namespace QuizFramework.Database
             _remoteConfigDownloader = remoteConfigDownloader;
         }
         
-        private IQuestionDatabase LoadFromLocal(string questionsJson)
+        private async Task<IQuestionDatabase> LoadFromLocal(string questionsJson)
         {
-            var questionDatabase = JsonConvert.DeserializeObject<QuestionDatabase>(questionsJson, JsonSettingsUtils.JsonSettings);
+            var questionDatabase = await Task.Run(() => 
+                JsonConvert.DeserializeObject<QuestionDatabase>(questionsJson, JsonSettingsUtils.JsonSettings));
+            
             questionDatabase.FillQuestionGroupsDict();
             return questionDatabase;
         }
@@ -64,9 +66,9 @@ namespace QuizFramework.Database
 
         #region IQuestionDatabaseLoader
 
-        IQuestionDatabase IQuestionDatabaseLoader.LoadFromLocal(string questionsJson)
+        async Task<IQuestionDatabase> IQuestionDatabaseLoader.LoadFromLocal(string questionsJson)
         {
-            return LoadFromLocal(questionsJson);
+            return await LoadFromLocal(questionsJson);
         }
 
         async Task<IQuestionDatabase> IQuestionDatabaseLoader.LoadFromRemote(string configPath, string questionsConfigId, int answersStartIndex, int answersEndIndex)

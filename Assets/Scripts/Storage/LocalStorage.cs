@@ -23,6 +23,11 @@ namespace QuizFramework.Storage
             return PlayerPrefs.GetString(LocalQuestionsKey, DefaultLocalQuestions);
         }
 
+        private bool HasLocalStorage()
+        {
+            return PlayerPrefs.HasKey(LocalVersionKey);
+        }
+
         private void SaveVersionToLocal(int version)
         {
             PlayerPrefs.SetInt(LocalVersionKey, version);
@@ -46,6 +51,11 @@ namespace QuizFramework.Storage
         string ILocalStorage.GetLocalQuestions()
         {
             return GetLocalQuestions();
+        }
+
+        bool ILocalStorage.HasLocalVersion()
+        {
+            return HasLocalStorage();
         }
 
         void ILocalStorage.SaveVersionToLocal(int version)

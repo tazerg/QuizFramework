@@ -58,7 +58,7 @@ namespace QuizFramework.UI
 
         private void RotateLoadingImage()
         {
-            _loadingImage.RotateAround(_loadingImage.position, Vector3.right, LoadingImageRotationSpeed * Time.deltaTime);
+            _loadingImage.RotateAround(_loadingImage.position, Vector3.forward, LoadingImageRotationSpeed * Time.deltaTime);
         }
     }
 }

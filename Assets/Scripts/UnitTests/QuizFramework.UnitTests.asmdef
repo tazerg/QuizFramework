@@ -2,6 +2,7 @@
     "name": "QuizFramework.UnitTests",
     "rootNamespace": "",
     "references": [
+        "GUID:17b631f3a852dbc4e8469dd60a1140dc",
         "GUID:43523191a6237ce4fa8f40748a4bbd62",
         "GUID:496165bec9114b04ebb1f107c5a67f92",
         "GUID:6cd0581c3284fd642a6bca3fbfbb1901",

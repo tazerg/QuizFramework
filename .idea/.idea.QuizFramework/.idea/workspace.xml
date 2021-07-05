@@ -20,28 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalQuestionsProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalQuestionsProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Config/Local/LocalQuestionsProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Config/Local/LocalQuestionsProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/UI/MainMenuVM/MainMenuVM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/UI/MainMenuVM/MainMenuVM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISignalBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISignalBus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribersList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribersList.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SignalBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SignalBus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SubscribersList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SubscribersList.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/SignalBusTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/SignalBusTests.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/LocalConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LocalConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/IQuestionDatabaseLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/IQuestionDatabaseLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/QuestionDatabaseLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/QuestionDatabaseLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/BootstrapInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Loading/MetaLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Loading/MetaLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM/LoadingVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM/LoadingVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Storage/ILocalStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Storage/ILocalStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Storage/LocalStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Storage/LocalStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuestionDatabaseLoaderTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuestionDatabaseLoaderTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTests/QuizFramework.UnitTests.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/QuizFramework.UnitTests.asmdef" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
@@ -74,7 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Plugins/Zenject/package.json" />
         <option value="$PROJECT_DIR$/credentials.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/Remote/IVersionControlChecker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/Remote/VersionControlChecker.cs" />
@@ -118,6 +111,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Database/Questions/QuestionDatabaseLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Loading/MetaLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuestionDatabaseLoaderTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISignalbuss.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISignalBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribesrListGeneric.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribersListGeneric.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribersList.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SubscribersList.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SignalBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/SignalBusTests.cs" />
       </list>
     </option>
   </component>
@@ -187,6 +188,8 @@
       <workItem from="1624978270566" duration="126000" />
       <workItem from="1625235475695" duration="2214000" />
       <workItem from="1625238070427" duration="3949000" />
+      <workItem from="1625393291550" duration="7289000" />
+      <workItem from="1625463396153" duration="4151000" />
     </task>
     <servers />
   </component>

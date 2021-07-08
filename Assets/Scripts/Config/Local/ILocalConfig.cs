@@ -7,5 +7,8 @@
         string VersionControlTabId { get; }        
         byte AnswersStartIndex { get; }
         byte AnswersEndIndex { get; }
+        string AdvertisementId { get; }
+        string RewardedPlacementId { get; }
+        string InterstitialPlacementId { get; }
     }
 }

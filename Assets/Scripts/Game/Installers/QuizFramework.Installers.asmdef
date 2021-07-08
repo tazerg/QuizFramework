@@ -2,12 +2,14 @@
     "name": "QuizFramework.Installers",
     "rootNamespace": "",
     "references": [
+        "GUID:17b631f3a852dbc4e8469dd60a1140dc",
         "GUID:43523191a6237ce4fa8f40748a4bbd62",
         "GUID:8cd7bf165c1021744aa3f7a554abee54",
         "GUID:6cd0581c3284fd642a6bca3fbfbb1901",
         "GUID:0979df21e3e659d4d885945826de97aa",
         "GUID:755ffdf77408e4b488729ae8e21c7e98",
         "GUID:496165bec9114b04ebb1f107c5a67f92",
+        "GUID:ff6de30450f3748908ff580f6ec64d9a",
         "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
     ],
     "includePlatforms": [

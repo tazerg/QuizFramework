@@ -1,4 +1,5 @@
-﻿using Zenject;
+﻿using QuizFramework.SignalBus;
+using Zenject;
 
 namespace QuizFramework.Installers
 {
@@ -6,7 +7,7 @@ namespace QuizFramework.Installers
     {
         public override void InstallBindings()
         {
-            //Nothing
+            Container.Bind<ISignalBus>().To<SignalBus.SignalBus>().AsSingle();
         }
     }
 }

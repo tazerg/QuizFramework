@@ -13,6 +13,11 @@ namespace QuizFramework.LocalConfig
         [Header("Question settings")] 
         [SerializeField] private byte _answerStartIndex;
         [SerializeField] private byte _answerEndIndex;
+
+        [Header("Advertisement")] 
+        [SerializeField] private string _advertisementId;
+        [SerializeField] private string _rewardedPlacementId;
+        [SerializeField] private string _interstitialPlacementId;
         
         #region ILocalConfig
 
@@ -21,6 +26,9 @@ namespace QuizFramework.LocalConfig
         string ILocalConfig.VersionControlTabId => _versionControlTabId;
         byte ILocalConfig.AnswersStartIndex => _answerStartIndex;
         byte ILocalConfig.AnswersEndIndex => _answerEndIndex;
+        string ILocalConfig.AdvertisementId => _advertisementId;
+        string ILocalConfig.RewardedPlacementId => _rewardedPlacementId;
+        string ILocalConfig.InterstitialPlacementId => _interstitialPlacementId;
 
         #endregion
     }

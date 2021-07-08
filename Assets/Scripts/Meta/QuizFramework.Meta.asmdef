@@ -1,12 +1,13 @@
 {
-    "name": "QuizFramework.UnitTests",
+    "name": "QuizFramework.Meta",
     "rootNamespace": "",
     "references": [
         "GUID:17b631f3a852dbc4e8469dd60a1140dc",
-        "GUID:ad2e0fff0eaeda44c854d287a7e41ec1",
+        "GUID:755ffdf77408e4b488729ae8e21c7e98",
         "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
     ],
     "includePlatforms": [
+        "Android",
         "Editor"
     ],
     "excludePlatforms": [],

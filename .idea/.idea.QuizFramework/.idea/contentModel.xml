@@ -367,91 +367,81 @@
           <e p="QuestionDatabase.json" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="Config" t="Include">
-            <e p="Local" t="Include">
+          <e p="Core" t="Include">
+            <e p="Advertisement" t="Include">
+              <e p="AdPlacement.cs" t="Include" />
+              <e p="AdShowResult.cs" t="Include" />
+              <e p="IAdsConfig.cs" t="Include" />
+              <e p="IAdsService.cs" t="Include" />
+              <e p="ShowAdResultReceived.cs" t="Include" />
+              <e p="UnityAds" t="Include">
+                <e p="UnityAdsService.cs" t="Include" />
+                <e p="UnityAdsShowListener.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Extensions" t="Include">
+              <e p="AsyncOperationExtension.cs" t="Include" />
+            </e>
+            <e p="QuizFramework.Core.asmdef" t="Include" />
+            <e p="RemoteConfigDownloader" t="Include">
+              <e p="IRemoteConfigDownloader.cs" t="Include" />
+              <e p="SpreadsheetConfigDownloader.cs" t="Include" />
+            </e>
+            <e p="Signalbus" t="Include">
+              <e p="ISignalBus.cs" t="Include" />
+              <e p="ISubscribersList.cs" t="Include" />
+              <e p="SignalBus.cs" t="Include" />
+              <e p="SubscribersList.cs" t="Include" />
+            </e>
+            <e p="Utils" t="Include">
+              <e p="JsonSettingsUtils.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="ConfigDownloader.cs" t="Include" />
+          </e>
+          <e p="Meta" t="Include">
+            <e p="Installers" t="Include">
+              <e p="BootstrapInstaller.cs" t="Include" />
+              <e p="MainSceneInstaller.cs" t="Include" />
+              <e p="ProjectRootInstaller.cs" t="Include" />
+            </e>
+            <e p="Loading" t="Include">
+              <e p="MetaLoader.cs" t="Include" />
+            </e>
+            <e p="LocalConfigs" t="Include">
+              <e p="AdsConfig.cs" t="Include" />
               <e p="ILocalConfig.cs" t="Include" />
               <e p="ILocalQuestionsProvider.cs" t="Include" />
               <e p="LocalConfig.cs" t="Include" />
               <e p="LocalQuestionsProvider.cs" t="Include" />
-              <e p="QuizFramework.LocalConfig.asmdef" t="Include" />
             </e>
-            <e p="Remote" t="Include">
-              <e p="IRemoteConfigDownloader.cs" t="Include" />
-              <e p="QuizFramework.RemoteConfig.asmdef" t="Include" />
-              <e p="SpreadsheetConfigDownloader.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Database" t="Include">
-            <e p="Questions" t="Include">
+            <e p="QuestionsDatabase" t="Include">
               <e p="IQuestionDatabase.cs" t="Include" />
               <e p="IQuestionDatabaseLoader.cs" t="Include" />
               <e p="Question.cs" t="Include" />
               <e p="QuestionDatabase.cs" t="Include" />
               <e p="QuestionDatabaseLoader.cs" t="Include" />
             </e>
-            <e p="QuizFramework.Database.asmdef" t="Include" />
-          </e>
-          <e p="Editor" t="Include">
-            <e p="ConfigDownloader.cs" t="Include" />
-          </e>
-          <e p="Extensions" t="Include">
-            <e p="AsyncOperationExtension.cs" t="Include" />
-            <e p="QuizFramework.Extensions.asmdef" t="Include" />
-          </e>
-          <e p="Game" t="Include">
-            <e p="Core" t="Include">
-              <e p="Advertisement" t="Include">
-                <e p="AdPlacement.cs" t="Include" />
-                <e p="AdShowResult.cs" t="Include" />
-                <e p="IAdsService.cs" t="Include" />
-                <e p="UnityAds" t="Include">
-                  <e p="UnityAdsService.cs" t="Include" />
-                  <e p="UnityAdsShowListener.cs" t="Include" />
-                </e>
-              </e>
-              <e p="QuizFramework.Core.asmdef" t="Include" />
-              <e p="Signalbus" t="Include">
-                <e p="ISignalBus.cs" t="Include" />
-                <e p="ISubscribersList.cs" t="Include" />
-                <e p="SignalBus.cs" t="Include" />
-                <e p="Signals" t="Include">
-                  <e p="ShowAdResultReceived.cs" t="Include" />
-                </e>
-                <e p="SubscribersList.cs" t="Include" />
-              </e>
+            <e p="QuizFramework.Meta.asmdef" t="Include" />
+            <e p="Storage" t="Include">
+              <e p="ILocalStorage.cs" t="Include" />
+              <e p="LocalStorage.cs" t="Include" />
             </e>
-            <e p="Installers" t="Include">
-              <e p="BootstrapInstaller.cs" t="Include" />
-              <e p="MainSceneInstaller.cs" t="Include" />
-              <e p="ProjectRootInstaller.cs" t="Include" />
-              <e p="QuizFramework.Installers.asmdef" t="Include" />
-            </e>
-            <e p="Meta" t="Include">
-              <e p="Loading" t="Include">
-                <e p="MetaLoader.cs" t="Include" />
-                <e p="QuizFramework.Loading.asmdef" t="Include" />
-              </e>
-              <e p="VesrionControl" t="Include">
-                <e p="IVersionChecker.cs" t="Include" />
-                <e p="QuizFramework.VersionControl.asmdef" t="Include" />
-                <e p="VersionChecker.cs" t="Include" />
-              </e>
-            </e>
-            <e p="UI" t="Include">
-              <e p="LoadingVM" t="Include">
-                <e p="LoadingVM.cs" t="Include" />
-                <e p="Progressbar.cs" t="Include" />
-              </e>
-              <e p="MainMenuVM" t="Include">
-                <e p="MainMenuVM.cs" t="Include" />
-              </e>
-              <e p="QuizFramework.UI.asmdef" t="Include" />
+            <e p="VesrionControl" t="Include">
+              <e p="IVersionChecker.cs" t="Include" />
+              <e p="VersionChecker.cs" t="Include" />
             </e>
           </e>
-          <e p="Storage" t="Include">
-            <e p="ILocalStorage.cs" t="Include" />
-            <e p="LocalStorage.cs" t="Include" />
-            <e p="QuizFramework.Storage.asmdef" t="Include" />
+          <e p="UI" t="Include">
+            <e p="LoadingVM" t="Include">
+              <e p="LoadingVM.cs" t="Include" />
+              <e p="Progressbar.cs" t="Include" />
+            </e>
+            <e p="MainMenuVM" t="Include">
+              <e p="MainMenuVM.cs" t="Include" />
+            </e>
+            <e p="QuizFramework.UI.asmdef" t="Include" />
           </e>
           <e p="UnitTests" t="Include">
             <e p="Editor" t="Include">
@@ -461,27 +451,15 @@
             </e>
             <e p="QuizFramework.UnitTests.asmdef" t="Include" />
           </e>
-          <e p="Utils" t="Include">
-            <e p="JsonSettingsUtils.cs" t="Include" />
-            <e p="QuizFramework.Utils.asmdef" t="Include" />
-          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="QuizFramework.Core.csproj" t="IncludeRecursive" />
-      <e p="QuizFramework.Database.csproj" t="IncludeRecursive" />
-      <e p="QuizFramework.Extensions.csproj" t="IncludeRecursive" />
-      <e p="QuizFramework.Installers.csproj" t="IncludeRecursive" />
-      <e p="QuizFramework.Loading.csproj" t="IncludeRecursive" />
-      <e p="QuizFramework.LocalConfig.csproj" t="IncludeRecursive" />
-      <e p="QuizFramework.RemoteConfig.csproj" t="IncludeRecursive" />
+      <e p="QuizFramework.Meta.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.sln" t="IncludeFlat" />
-      <e p="QuizFramework.Storage.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.UI.csproj" t="IncludeRecursive" />
       <e p="QuizFramework.UnitTests.csproj" t="IncludeRecursive" />
-      <e p="QuizFramework.Utils.csproj" t="IncludeRecursive" />
-      <e p="QuizFramework.VersionControl.csproj" t="IncludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="Zenject-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject.csproj" t="IncludeRecursive" />

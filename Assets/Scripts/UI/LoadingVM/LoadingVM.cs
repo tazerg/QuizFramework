@@ -1,56 +1,34 @@
-﻿using System;
-using QuizFramework.Loading;
+﻿using QuizFramework.UI.Signals;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace QuizFramework.UI
 {
-    public class LoadingVM : BaseWindowVM<LoadingProgressReportSignal>
+    public class LoadingVM : BaseWindowVM<OpenLoadingSignal>
     {
         private const float LoadingImageRotationSpeed = 20f;
         
-        [SerializeField] private Text _progressStatus;
-        [SerializeField] private Text _progressbarText;
-        [SerializeField] private Image _progressbarFill;
         [SerializeField] private RectTransform _loadingImage;
 
-        private IProgress<float> _progressbar;
-
-        protected override void OnHandleEvent(LoadingProgressReportSignal eventParams)
+        protected override void OnInitialize()
         {
-            _progressbar.Report(eventParams.Progress);
-            SetProgressStatus(eventParams.Status);
+            SignalBus.Subscribe<CloseLoadingSignal>(Close);
+        }
+
+        protected override void OnDispose()
+        {
+            SignalBus.Unsubscribe<CloseLoadingSignal>(Close);
         }
 
         protected override void CheckReferences()
         {
-            if (_progressStatus == null)
-                Debug.LogError("Progress status not set!");
-            
-            if (_progressbarText == null)
-                Debug.LogError("Progressbar text not set!");
-            
-            if (_progressbarFill == null)
-                Debug.LogError("Progressbar fill not set!");
-            
             if (_loadingImage == null)
                 Debug.LogError("Loading image not set!");
         }
 
-        protected override void Initialize()
-        {
-            _progressbar = new Progressbar(_progressbarText, _progressbarFill);
-        }
-
-        protected override void Dispose()
+        protected override void OnHandleEvent(OpenLoadingSignal eventParams)
         {
         }
-
-        private void SetProgressStatus(string status)
-        {
-            _progressStatus.text = status;
-        }
-
+        
         private void Update()
         {
             RotateLoadingImage();

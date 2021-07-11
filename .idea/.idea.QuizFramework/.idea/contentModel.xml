@@ -379,6 +379,12 @@
                 <e p="UnityAdsShowListener.cs" t="Include" />
               </e>
             </e>
+            <e p="EmailSenderToSelf" t="Include">
+              <e p="EmailSenderToSelf.cs" t="Include" />
+              <e p="EmailSendResult.cs" t="Include" />
+              <e p="IEmailSenderToSelf.cs" t="Include" />
+              <e p="IEmailSenderToSelfConfig.cs" t="Include" />
+            </e>
             <e p="Extensions" t="Include">
               <e p="AsyncOperationExtension.cs" t="Include" />
             </e>
@@ -419,6 +425,9 @@
               <e p="Ads" t="Include">
                 <e p="AdsConfig.cs" t="Include" />
               </e>
+              <e p="EmailSenderToSelf" t="Include">
+                <e p="EmailSenderToSelfConfig.cs" t="Include" />
+              </e>
               <e p="Questions" t="Include">
                 <e p="ILocalQuestionsProvider.cs" t="Include" />
                 <e p="IQuestionDownloaderConfig.cs" t="Include" />
@@ -449,16 +458,27 @@
           </e>
           <e p="UI" t="Include">
             <e p="BaseWindowVM.cs" t="Include" />
+            <e p="IWindow.cs" t="Include" />
             <e p="LoadingVM" t="Include">
+              <e p="GameLoadingVM.cs" t="Include" />
               <e p="LoadingVM.cs" t="Include" />
               <e p="Progressbar.cs" t="Include" />
             </e>
             <e p="MainMenuVM" t="Include">
               <e p="MainMenuVM.cs" t="Include" />
             </e>
+            <e p="MainSceneCanvas.cs" t="Include" />
             <e p="QuizFramework.UI.asmdef" t="Include" />
+            <e p="SendQuestionVM" t="Include">
+              <e p="SendQuestionPopupVM.cs" t="Include" />
+              <e p="SendQuestionVM.cs" t="Include" />
+            </e>
             <e p="Signals" t="Include">
+              <e p="CloseLoadingSignal.cs" t="Include" />
+              <e p="OpenLoadingSignal.cs" t="Include" />
               <e p="OpenMainMenuSignal.cs" t="Include" />
+              <e p="OpenSendQuestionSignal.cs" t="Include" />
+              <e p="ShowSendQuestionPopupSignal.cs" t="Include" />
             </e>
           </e>
           <e p="UnitTests" t="Include">

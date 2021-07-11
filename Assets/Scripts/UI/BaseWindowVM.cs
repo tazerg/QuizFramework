@@ -4,7 +4,7 @@ using Zenject;
 
 namespace QuizFramework.UI
 {
-    public abstract class BaseWindowVM<T> : MonoBehaviour where T : struct
+    public abstract class BaseWindowVM<T> : MonoBehaviour, IWindow where T : struct
     {
         [Inject] protected ISignalBus SignalBus { get; private set; }
 
@@ -13,10 +13,10 @@ namespace QuizFramework.UI
             gameObject.SetActive(false);
         }
 
-        protected abstract void OnHandleEvent(T eventParams);
+        protected abstract void OnInitialize();
+        protected abstract void OnDispose();
         protected abstract void CheckReferences();
-        protected abstract void Initialize();
-        protected abstract void Dispose();
+        protected abstract void OnHandleEvent(T eventParams);
         
         private void TryOpen()
         {
@@ -28,18 +28,18 @@ namespace QuizFramework.UI
             gameObject.SetActive(true);
         }
 
-        private void Awake()
+        private void Initialize()
         {
             CheckReferences();
 
-            Initialize();
+            OnInitialize();
             
             SignalBus.Subscribe<T>(HandleEvent);
         }
 
         private void OnDestroy()
         {
-            Dispose();
+            OnDispose();
             
             SignalBus.Unsubscribe<T>(HandleEvent);
         }
@@ -49,5 +49,28 @@ namespace QuizFramework.UI
             TryOpen();
             OnHandleEvent(eventParams);
         }
+
+        #region IWindow
+
+        void IWindow.TryOpen()
+        {
+            TryOpen();
+        }
+        
+        void IWindow.Close()
+        {
+            Close();
+        }
+
+        #endregion
+
+        #region IInitializable
+        
+        void IInitializable.Initialize()
+        {
+            Initialize();
+        }
+
+        #endregion
     }
 }

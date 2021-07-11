@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d25e476b06754e2d8af3d79e3054193d, type: 3}
-  m_Name: AdsConfig
+  m_Script: {fileID: 11500000, guid: 92142f14a8994dfd84b528956f54ff6b, type: 3}
+  m_Name: EmailSenderToSelfConfig
   m_EditorClassIdentifier: 
-  _adProjectId: b727b39f-5270-4087-8bfb-c65f26f6b409
-  _rewardedPlacementId: ' rewardedVideo'
-  _interstitialPlacementId: ' video'
+  _smtpHost: smtp.gmail.com
+  _smtpPort: 587
+  _emailAddress: jillhaustquestions@gmail.com
+  _emailSecret: bjforbdsboeqmbhl
+  _messageSubject: test

@@ -1,4 +1,4 @@
-﻿using QuizFramework.SignalBus;
+﻿using System;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -6,33 +6,28 @@ namespace QuizFramework.Advertisement
 {
     public class UnityAdsShowListener : IUnityAdsShowListener
     {
-        private readonly ISignalBus _signalBus;
-
-        public UnityAdsShowListener(ISignalBus signalBus)
-        {
-            _signalBus = signalBus;
-        }
+        public event Action<AdShowResult> ShowAdResultReceived;
         
         private void OnUnityAdsShowFailure(UnityAdsShowError error, string message)
         {
             Debug.LogError($"Ad show failed. Error {error}. Message {message}");
-            _signalBus.Fire(new ShowAdResultReceived(AdShowResult.Failed));
+            ShowAdResultReceived?.Invoke(AdShowResult.Failed);
         }
 
         private void OnUnityAdsShowClick()
         {
-            _signalBus.Fire(new ShowAdResultReceived(AdShowResult.Finished));
+            ShowAdResultReceived?.Invoke(AdShowResult.Finished);
         }
 
         private void OnUnityAdsShowComplete(UnityAdsShowCompletionState showCompletionState)
         {
             if (showCompletionState == UnityAdsShowCompletionState.SKIPPED)
             {
-                _signalBus.Fire(new ShowAdResultReceived(AdShowResult.Skipped));
+                ShowAdResultReceived?.Invoke(AdShowResult.Skipped);
                 return;
             }
             
-            _signalBus.Fire(new ShowAdResultReceived(AdShowResult.Finished));
+            ShowAdResultReceived?.Invoke(AdShowResult.Finished);
         }
 
         #region IUnityAdsShowListener

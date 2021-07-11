@@ -20,49 +20,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Tools.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/LoadingProgressReportSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/LoadingProgressReportSignal.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Ads.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/QuestionDownloaderConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenMainMenuSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenMainMenuSignal.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSendResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSendResult.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSenderToSelf.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSenderToSelf.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/IEmailSenderToSelf.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/IEmailSenderToSelf.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/IEmailSenderToSelfConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/IEmailSenderToSelfConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/EmailSenderToSelf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/EmailSenderToSelf/EmailSenderToSelfConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/EmailSenderToSelf/EmailSenderToSelfConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/IWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/IWindow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/GameLoadingVM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/GameLoadingVM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainSceneCanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainSceneCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionPopupVM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionPopupVM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionVM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionVM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/CloseLoadingSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/CloseLoadingSignal.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenLoadingSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenLoadingSignal.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSendQuestionSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSendQuestionSignal.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowSendQuestionPopupSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowSendQuestionPopupSignal.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/LocalConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/LocalConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/AdsConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AdsConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/BootstrapInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsShowListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsShowListener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/AdsConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Ads/AdsConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/AdsConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Ads/AdsConfig.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ILocalConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/IQuestionDownloaderConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ILocalConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/IQuestionDownloaderConfig.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ILocalQuestionsProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/ILocalQuestionsProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ILocalQuestionsProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/ILocalQuestionsProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/QuestionDownloaderConfig.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalQuestionsProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalQuestionsProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/QuizFramework.Meta.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuizFramework.Meta.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,51 +73,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/139400A5-8703-4777-9C48-EAEDE9B959AA/4d/1525b499/ClientServiceRequest`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/01/89e93381/IProgress`1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5B293C7-4049-457C-ABC2-8437C5A76392/a8/abba1cda/IInitializable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/cc/724e6b1f/IUnityAdsShowListener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/cb/6ef63592/UnityAdsShowCompletionState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/39536A03-EC01-488D-9573-F19141EF4B8B/5f/7ee43338/UnityWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../TippingPoint/gpsgame/dinotanks_unity/Assets/Game/Scripts/Server/IAP/IapController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/7e/9dcd761d/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E7F43C3-8E21-4491-A21E-E815B941DBB6/5f/444fbd69/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADFA4B62-4008-4918-9388-DF71C9E26E89/49/805a0ab2/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7473C954-E0D6-45A4-A2BC-71901A1BE73A/27/9f635576/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/39536A03-EC01-488D-9573-F19141EF4B8B/32/5866ab9c/UnityWebRequestAsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/34/e6301014/Environment.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/fa/0b857751/TestAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Runtime/Advertisement/Advertisement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3C595CB7-50AD-4139-B3A6-70292E669DED/12/43e1ff4d/GoogleWebAuthorizationBroker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/85/ef99f972/UnityAdsShowError.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/cc/73a737b7/TaskCompletionSource`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/06/24646300/IUnityAdsInitializationListener.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/51/d18b2a64/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSenderToSelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FFBC337A-2856-4C7E-9D4A-F975C893C916/85/ca0a2f5b/SpreadsheetsResource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADFA4B62-4008-4918-9388-DF71C9E26E89/ab/5bd36e2d/AsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/139400A5-8703-4777-9C48-EAEDE9B959AA/4d/1525b499/ClientServiceRequest`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/39536A03-EC01-488D-9573-F19141EF4B8B/5f/7ee43338/UnityWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/7e/9dcd761d/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E7F43C3-8E21-4491-A21E-E815B941DBB6/5f/444fbd69/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADFA4B62-4008-4918-9388-DF71C9E26E89/49/805a0ab2/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A6C194-5F57-4474-95FC-AD42118554C7/52/4860bd5c/ServicePointManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Runtime/Advertisement/Platform/IPlatform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/fa/0b857751/TestAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/85/ef99f972/UnityAdsShowError.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/06/24646300/IUnityAdsInitializationListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/51/d18b2a64/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Runtime/Advertisement/IUnityAdsListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A6C194-5F57-4474-95FC-AD42118554C7/ea/8f31ed11/SmtpClient.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalQuestionDatabaseProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalQuestionsProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Config/Local/LocalQuestionsProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Installers/BootstrapInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Database/Questions/IQuestionDatabaseLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Database/Questions/QuestionDatabaseLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Loading/MetaLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuestionDatabaseLoaderTests.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISignalbuss.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISignalBus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribesrListGeneric.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribersListGeneric.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribersList.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SubscribersList.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SignalBus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/SignalBusTests.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Installers/ProjectRootInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Advertisement/AdShowResult.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Advertisement/AdPlacement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Advertisement/IAdsService.cs" />
@@ -132,7 +119,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Installers/MainSceneInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ILocalConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/IAdsConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/AdsConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenMainMenuSignal.cs" />
@@ -144,13 +130,32 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/BootstrapInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/LoadingProgressReportSignal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsShowListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/EmailSenderToSelf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/GmailSenderToSelf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSendResult.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/IEmailSenderToSelfConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/EmailSenderToSelf/EmailSenderToSelfConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/IEmailSenderToSelf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSendQuestionSignal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/ShowSendQuestionPopupSignal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowSendQuestionPopupSignal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenLoadingSignal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/CloseLoadingSignal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/IWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/GameLoadingVM.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionPopupVM.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionVM.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainSceneCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSenderToSelf.cs" />
       </list>
     </option>
   </component>
@@ -169,7 +174,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="XThreadsFramesViewSplitterKey" value="0.7193764" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.66821706" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -182,10 +187,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10332">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="10332" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -228,7 +233,7 @@
       <workItem from="1625720648025" duration="1636000" />
       <workItem from="1625734219545" duration="990000" />
       <workItem from="1625735628827" duration="671000" />
-      <workItem from="1625987605950" duration="4828000" />
+      <workItem from="1625987605950" duration="17939000" />
     </task>
     <servers />
   </component>
@@ -261,74 +266,74 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="516" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1625237616069" />
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1625237705494">
+    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1626006405480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705494" />
-    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405480" />
+    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1625237705493">
+    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705493" />
-    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1625237705494">
+    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1626006405479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705494" />
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1625237705494">
+    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405479" />
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1626006405480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705494" />
-    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1625237705494">
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405480" />
+    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1626006405480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705494" />
-    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1625237705494">
+    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405480" />
+    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1626006405480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705494" />
-    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1625237705494">
+    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405480" />
+    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1626006405480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705494" />
-    <state x="771" y="198" key="RiderGenerateDialog" timestamp="1625989616978">
+    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1626006405480" />
+    <state x="771" y="198" key="RiderGenerateDialog" timestamp="1626002209734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="771" y="198" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625989616978" />
+    <state x="771" y="198" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626002209734" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1624011624363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -341,40 +346,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1624089139635" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1625734532265">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1626002287653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1625734532265" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuestionDatabaseLoaderTests.cs</url>
-          <line>154</line>
-          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\UnitTests\Editor\QuestionDatabaseLoaderTests.cs" initialLine="152">
-            <startOffsets>
-              <option value="6094" />
-            </startOffsets>
-            <endOffsets>
-              <option value="6117" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabaseLoader.cs</url>
-          <line>37</line>
-          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Database\Questions\QuestionDatabaseLoader.cs" initialLine="35" />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabaseLoader.cs</url>
-          <line>57</line>
-          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Database\Questions\QuestionDatabaseLoader.cs" initialLine="55" />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626002287653" />
   </component>
 </project>

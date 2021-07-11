@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using QuizFramework.SignalBus;
 using UnityEngine;
 using UnityEngine.Advertisements;
 using Zenject;
+
 using UnityAds = UnityEngine.Advertisements.Advertisement;
 
 namespace QuizFramework.Advertisement
@@ -11,29 +11,27 @@ namespace QuizFramework.Advertisement
     public class UnityAdsService : IAdsService, IInitializable, IDisposable
     {
         private readonly IAdsConfig _adsConfig;
-        private readonly ISignalBus _signalBus;
         
         private readonly IUnityAdsShowListener _adsShowListener;
         private TaskCompletionSource<AdShowResult> _taskCompletionSource;
 
-        public UnityAdsService(IAdsConfig adsConfig, ISignalBus signalBus)
+        public UnityAdsService(IAdsConfig adsConfig)
         {
             _adsConfig = adsConfig;
-            _signalBus = signalBus;
             
-            _adsShowListener = new UnityAdsShowListener(_signalBus);
+            _adsShowListener = new UnityAdsShowListener();
         }
         
         private void Initialize()
         {
             UnityAds.Initialize(_adsConfig.AdProjectId);
-            
-            _signalBus.Subscribe<ShowAdResultReceived>(OnAdsShowResultReceived);
+
+            ((UnityAdsShowListener) _adsShowListener).ShowAdResultReceived += OnAdsShowResultReceived;
         }
 
         private void Dispose()
         {
-            _signalBus.Unsubscribe<ShowAdResultReceived>(OnAdsShowResultReceived);
+            ((UnityAdsShowListener) _adsShowListener).ShowAdResultReceived -= OnAdsShowResultReceived;
         }
 
         private bool IsReady(AdPlacement placement)
@@ -64,9 +62,9 @@ namespace QuizFramework.Advertisement
             }
         }
 
-        private void OnAdsShowResultReceived(ShowAdResultReceived signal)
+        private void OnAdsShowResultReceived(AdShowResult result)
         {
-            _taskCompletionSource.SetResult(signal.AdShowResult);
+            _taskCompletionSource.SetResult(result);
         }
 
         #region IAdsService

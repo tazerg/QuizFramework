@@ -16,9 +16,23 @@ namespace QuizFramework.UI
         [SerializeField] private Button _vkLinkButton;
         [SerializeField] private Button _sendQuestionButton;
         [SerializeField] private Button _supportButton;
-        
-        protected override void OnHandleEvent(OpenMainMenuSignal eventParams)
+
+        protected override void OnInitialize()
         {
+            _selectLevelButton.onClick.AddListener(OnSelectLevelButtonCLicked);
+            _moreGamesButton.onClick.AddListener(OnMoreGamesButtonClicked);
+            _vkLinkButton.onClick.AddListener(OnVkLinkButtonClicked);
+            _sendQuestionButton.onClick.AddListener(OnSendQuestionButtonClicked);
+            _supportButton.onClick.AddListener(OnSupportButtonClicked);
+        }
+
+        protected override void OnDispose()
+        {
+            _selectLevelButton.onClick.RemoveListener(OnSelectLevelButtonCLicked);
+            _moreGamesButton.onClick.RemoveListener(OnMoreGamesButtonClicked);
+            _vkLinkButton.onClick.RemoveListener(OnVkLinkButtonClicked);
+            _sendQuestionButton.onClick.RemoveListener(OnSendQuestionButtonClicked);
+            _supportButton.onClick.RemoveListener(OnSupportButtonClicked);
         }
 
         protected override void CheckReferences()
@@ -38,23 +52,9 @@ namespace QuizFramework.UI
             if (_supportButton == null)
                 Debug.LogError("Support button not set!");
         }
-
-        protected override void Initialize()
+        
+        protected override void OnHandleEvent(OpenMainMenuSignal eventParams)
         {
-            _selectLevelButton.onClick.AddListener(OnSelectLevelButtonCLicked);
-            _moreGamesButton.onClick.AddListener(OnMoreGamesButtonClicked);
-            _vkLinkButton.onClick.AddListener(OnVkLinkButtonClicked);
-            _sendQuestionButton.onClick.AddListener(OnSendQuestionButtonClicked);
-            _supportButton.onClick.AddListener(OnSupportButtonClicked);
-        }
-
-        protected override void Dispose()
-        {
-            _selectLevelButton.onClick.RemoveListener(OnSelectLevelButtonCLicked);
-            _moreGamesButton.onClick.RemoveListener(OnMoreGamesButtonClicked);
-            _vkLinkButton.onClick.RemoveListener(OnVkLinkButtonClicked);
-            _sendQuestionButton.onClick.RemoveListener(OnSendQuestionButtonClicked);
-            _supportButton.onClick.RemoveListener(OnSupportButtonClicked);
         }
 
         private void OnSelectLevelButtonCLicked()
@@ -74,7 +74,8 @@ namespace QuizFramework.UI
 
         private void OnSendQuestionButtonClicked()
         {
-            throw new NotImplementedException();
+            SignalBus.Fire(new OpenSendQuestionSignal());
+            Close();
         }
 
         private void OnSupportButtonClicked()

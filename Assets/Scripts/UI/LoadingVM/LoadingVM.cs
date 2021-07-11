@@ -1,10 +1,11 @@
 ﻿using System;
+using QuizFramework.Loading;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace QuizFramework.UI
 {
-    public class LoadingVM : MonoBehaviour
+    public class LoadingVM : BaseWindowVM<LoadingProgressReportSignal>
     {
         private const float LoadingImageRotationSpeed = 20f;
         
@@ -15,33 +16,13 @@ namespace QuizFramework.UI
 
         private IProgress<float> _progressbar;
 
-        public IProgress<float> Progressbar
+        protected override void OnHandleEvent(LoadingProgressReportSignal eventParams)
         {
-            get
-            {
-                if (_progressbar == null)
-                    _progressbar = new Progressbar(_progressbarText, _progressbarFill);
-
-                return _progressbar;
-            }
+            _progressbar.Report(eventParams.Progress);
+            SetProgressStatus(eventParams.Status);
         }
 
-        public void SetProgressStatus(string status)
-        {
-            _progressStatus.text = status;
-        }
-
-        private void Awake()
-        {
-            CheckReferences();
-        }
-
-        private void Update()
-        {
-            RotateLoadingImage();
-        }
-
-        private void CheckReferences()
+        protected override void CheckReferences()
         {
             if (_progressStatus == null)
                 Debug.LogError("Progress status not set!");
@@ -54,6 +35,25 @@ namespace QuizFramework.UI
             
             if (_loadingImage == null)
                 Debug.LogError("Loading image not set!");
+        }
+
+        protected override void Initialize()
+        {
+            _progressbar = new Progressbar(_progressbarText, _progressbarFill);
+        }
+
+        protected override void Dispose()
+        {
+        }
+
+        private void SetProgressStatus(string status)
+        {
+            _progressStatus.text = status;
+        }
+
+        private void Update()
+        {
+            RotateLoadingImage();
         }
 
         private void RotateLoadingImage()

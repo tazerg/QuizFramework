@@ -2,8 +2,8 @@
 using QuizFramework.Database;
 using QuizFramework.Extensions;
 using QuizFramework.LocalConfig;
+using QuizFramework.SignalBus;
 using QuizFramework.Storage;
-using QuizFramework.UI;
 using QuizFramework.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,16 +14,15 @@ namespace QuizFramework.Loading
     public class MetaLoader : MonoBehaviour
     {
         private const int FirstVersion = 1;
-        
-        private LoadingVM _loadingVm;
-        private DiContainer _projectContainer;
-        
-        private IVersionChecker _versionChecker;
-        private ILocalConfig _localConfig;
-        private IQuestionDatabaseLoader _questionDatabaseLoader;
-        private ILocalStorage _localStorage;
-        private ILocalQuestionsProvider _localQuestionsProvider;
 
+        [Inject] private ISignalBus _signalBus;
+        [Inject] private IVersionChecker _versionChecker;
+        [Inject] private IQuestionDownloaderConfig _questionDownloaderConfig;
+        [Inject] private IQuestionDatabaseLoader _questionDatabaseLoader;
+        [Inject] private ILocalStorage _localStorage;
+        [Inject] private ILocalQuestionsProvider _localQuestionsProvider;
+        
+        private DiContainer _projectContainer;
         private DiContainer ProjectContainer
         {
             get
@@ -33,19 +32,6 @@ namespace QuizFramework.Loading
 
                 return _projectContainer;
             }
-        }
-        
-        [Inject]
-        public void Inject(LoadingVM loadingVm, IVersionChecker versionChecker, ILocalConfig localConfig, 
-            IQuestionDatabaseLoader questionDatabaseLoader, ILocalStorage localStorage, ILocalQuestionsProvider localQuestionsProvider)
-        {
-            _loadingVm = loadingVm;
-            
-            _versionChecker = versionChecker;
-            _localConfig = localConfig;
-            _questionDatabaseLoader = questionDatabaseLoader;
-            _localStorage = localStorage;
-            _localQuestionsProvider = localQuestionsProvider;
         }
 
         private async void Start()
@@ -78,23 +64,20 @@ namespace QuizFramework.Loading
 
         private async Task LoadFlow()
         {
-            _loadingVm.Progressbar.Report(0f);
-            _loadingVm.SetProgressStatus("Проверка обновлений...");
+            _signalBus.Fire(new LoadingProgressReportSignal(0f, "Проверка обновлений..."));
 
-            var isCorrectVersion = await _versionChecker.IsCorrectVersion(_localConfig.QuestionsSheetId, _localConfig.VersionControlTabId);
+            var isCorrectVersion = await _versionChecker.IsCorrectVersion(_questionDownloaderConfig.QuestionsSheetId, _questionDownloaderConfig.VersionControlTabId);
 
             await LoadQuestions(isCorrectVersion);
 
-            _loadingVm.Progressbar.Report(0.8f);
-            _loadingVm.SetProgressStatus("Загружаем игру...");
+            _signalBus.Fire(new LoadingProgressReportSignal(0.8f, "Загружаем игру..."));
         }
 
         private async Task LoadQuestions(bool isCorrectVersion)
         {
             if (isCorrectVersion)
             {
-                _loadingVm.Progressbar.Report(0.4f);
-                _loadingVm.SetProgressStatus("Загружаем вопросы...");
+                _signalBus.Fire(new LoadingProgressReportSignal(0.4f, "Загружаем вопросы..."));
                 
                 var questionsJson = _localStorage.GetLocalQuestions();
                 var localQuestionDatabase = await _questionDatabaseLoader.LoadFromLocal(questionsJson);
@@ -103,16 +86,14 @@ namespace QuizFramework.Loading
                 return;
             }
 
-            _loadingVm.Progressbar.Report(0.2f);
-            _loadingVm.SetProgressStatus("Скачиваем обновление...");
+            _signalBus.Fire(new LoadingProgressReportSignal(0.2f, "Скачиваем обновление..."));
             
-            var remoteQuestionDatabase = await _questionDatabaseLoader.LoadFromRemote(_localConfig.QuestionsSheetId,
-                _localConfig.QuestionsTabId, _localConfig.AnswersStartIndex, _localConfig.AnswersEndIndex);
+            var remoteQuestionDatabase = await _questionDatabaseLoader.LoadFromRemote(_questionDownloaderConfig.QuestionsSheetId,
+                _questionDownloaderConfig.QuestionsTabId, _questionDownloaderConfig.AnswersStartIndex, _questionDownloaderConfig.AnswersEndIndex);
             
             ProjectContainer.BindInstance(remoteQuestionDatabase).AsSingle();
             
-            _loadingVm.Progressbar.Report(0.4f);
-            _loadingVm.SetProgressStatus("Загружаем вопросы...");
+            _signalBus.Fire(new LoadingProgressReportSignal(0.4f, "Загружаем вопросы..."));
             
             _localStorage.SaveVersionToLocal(_versionChecker.RemoteVersion.Value);
             _localStorage.SaveQuestionsToLocal(remoteQuestionDatabase);

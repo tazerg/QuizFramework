@@ -393,6 +393,11 @@
               <e p="SignalBus.cs" t="Include" />
               <e p="SubscribersList.cs" t="Include" />
             </e>
+            <e p="Tools" t="Include">
+              <e p="Editor" t="Include">
+                <e p="uGUITools.cs" t="Include" />
+              </e>
+            </e>
             <e p="Utils" t="Include">
               <e p="JsonSettingsUtils.cs" t="Include" />
             </e>
@@ -407,14 +412,23 @@
               <e p="ProjectRootInstaller.cs" t="Include" />
             </e>
             <e p="Loading" t="Include">
+              <e p="LoadingProgressReportSignal.cs" t="Include" />
               <e p="MetaLoader.cs" t="Include" />
             </e>
             <e p="LocalConfigs" t="Include">
-              <e p="AdsConfig.cs" t="Include" />
-              <e p="ILocalConfig.cs" t="Include" />
-              <e p="ILocalQuestionsProvider.cs" t="Include" />
-              <e p="LocalConfig.cs" t="Include" />
-              <e p="LocalQuestionsProvider.cs" t="Include" />
+              <e p="Ads" t="Include">
+                <e p="AdsConfig.cs" t="Include" />
+              </e>
+              <e p="Questions" t="Include">
+                <e p="ILocalQuestionsProvider.cs" t="Include" />
+                <e p="IQuestionDownloaderConfig.cs" t="Include" />
+                <e p="LocalQuestionsProvider.cs" t="Include" />
+                <e p="QuestionDownloaderConfig.cs" t="Include" />
+              </e>
+              <e p="SocialNetwork" t="Include">
+                <e p="ISocialNetworkConfig.cs" t="Include" />
+                <e p="SocialNetworkConfig.cs" t="Include" />
+              </e>
             </e>
             <e p="QuestionsDatabase" t="Include">
               <e p="IQuestionDatabase.cs" t="Include" />
@@ -434,6 +448,7 @@
             </e>
           </e>
           <e p="UI" t="Include">
+            <e p="BaseWindowVM.cs" t="Include" />
             <e p="LoadingVM" t="Include">
               <e p="LoadingVM.cs" t="Include" />
               <e p="Progressbar.cs" t="Include" />
@@ -442,6 +457,9 @@
               <e p="MainMenuVM.cs" t="Include" />
             </e>
             <e p="QuizFramework.UI.asmdef" t="Include" />
+            <e p="Signals" t="Include">
+              <e p="OpenMainMenuSignal.cs" t="Include" />
+            </e>
           </e>
           <e p="UnitTests" t="Include">
             <e p="Editor" t="Include">

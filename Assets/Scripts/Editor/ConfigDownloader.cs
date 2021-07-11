@@ -15,7 +15,7 @@ namespace QuizFramework.Tools
         [MenuItem("QuizFramework/Download question database")]
         private static async void DownloadQuestionDatabase()
         {
-            var localConfig = (ILocalConfig) Resources.Load<LocalConfig.LocalConfig>("LocalConfig");
+            var localConfig = (IQuestionDownloaderConfig) Resources.Load<LocalConfig.QuestionDownloaderConfig>("LocalConfig");
             var questionDatabaseLoader = (IQuestionDatabaseLoader) new QuestionDatabaseLoader(new SpreadsheetConfigDownloader());
 
             var questionDatabase = await questionDatabaseLoader.LoadFromRemote(localConfig.QuestionsSheetId,

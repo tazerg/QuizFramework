@@ -8,9 +8,15 @@ namespace QuizFramework.Installers
     {
         public override void InstallBindings()
         {
-            Container.Bind<IAdsConfig>().To<AdsConfig>().FromScriptableObjectResource("AdsConfig").AsSingle();
-            
+            BindLocalConfigs();
+
             Container.Bind<IAdsService>().To<UnityAdsService>().AsSingle().NonLazy();
+        }
+
+        private void BindLocalConfigs()
+        {
+            Container.Bind<IAdsConfig>().To<AdsConfig>().FromScriptableObjectResource("AdsConfig").AsSingle();
+            Container.Bind<ISocialNetworkConfig>().To<SocialNetworkConfig>().FromScriptableObjectResource("SocialNetworkConfig").AsSingle();
         }
     }
 }

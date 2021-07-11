@@ -1,6 +1,6 @@
 ﻿namespace QuizFramework.LocalConfig
 {
-    public interface ILocalConfig
+    public interface IQuestionDownloaderConfig
     {
         string QuestionsSheetId { get; }
         string QuestionsTabId { get; }

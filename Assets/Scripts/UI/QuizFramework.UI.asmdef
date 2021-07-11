@@ -1,7 +1,10 @@
 {
     "name": "QuizFramework.UI",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:17b631f3a852dbc4e8469dd60a1140dc",
+        "GUID:ad2e0fff0eaeda44c854d287a7e41ec1"
+    ],
     "includePlatforms": [
         "Android",
         "Editor"

@@ -20,125 +20,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/IAdsConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/IAdsConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/AdsConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/AdsConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Tools.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/LoadingProgressReportSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/LoadingProgressReportSignal.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Ads.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/QuestionDownloaderConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenMainMenuSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenMainMenuSignal.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalConfig.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalQuestionsProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalQuestionsProvider.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/LocalConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/LocalConfig.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/LocalQuestionsProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/LocalQuestionsProvider.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/QuizFramework.LocalConfig.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Local/QuizFramework.LocalConfig.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Remote.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Remote/IRemoteConfigDownloader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Remote/IRemoteConfigDownloader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Remote/QuizFramework.RemoteConfig.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Remote/QuizFramework.RemoteConfig.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Remote/SpreadsheetConfigDownloader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Config/Remote/SpreadsheetConfigDownloader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/IQuestionDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/IQuestionDatabase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabase.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/IQuestionDatabaseLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabaseLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/IQuestionDatabaseLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabaseLoader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/Question.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/Question.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/Question.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/Question.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/QuestionDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/QuestionDatabase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/QuestionDatabaseLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabaseLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Questions/QuestionDatabaseLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabaseLoader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/QuizFramework.Database.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/QuizFramework.Database.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extensions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extensions/AsyncOperationExtension.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extensions/AsyncOperationExtension.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extensions/QuizFramework.Extensions.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extensions/QuizFramework.Extensions.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/AdPlacement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/AdPlacement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/AdShowResult.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/AdShowResult.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/IAdsService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/IAdsService.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/UnityAds.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/UnityAds/UnityAdsService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/UnityAds/UnityAdsService.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/UnityAds/UnityAdsShowListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Advertisement/UnityAds/UnityAdsShowListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/QuizFramework.Core.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/QuizFramework.Core.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISignalBus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISignalBus.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribersList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/ISubscribersList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SignalBus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SignalBus.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/Signals.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/Signals/ShowAdResultReceived.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/Signals/ShowAdResultReceived.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SubscribersList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Core/Signalbus/SubscribersList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/BootstrapInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/BootstrapInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/BootstrapInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/MainSceneInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/ProjectRootInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/ProjectRootInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/ProjectRootInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/ProjectRootInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/QuizFramework.Installers.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/QuizFramework.Installers.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Loading.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Loading/MetaLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Loading/MetaLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Loading/QuizFramework.Loading.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/Loading/QuizFramework.Loading.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/VesrionControl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/VesrionControl/IVersionChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/IVersionChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/VesrionControl/IVersionChecker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/IVersionChecker.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/VesrionControl/QuizFramework.VersionControl.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/VesrionControl/QuizFramework.VersionControl.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/VesrionControl/VersionChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Meta/VesrionControl/VersionChecker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM/LoadingVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM/LoadingVM.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM/Progressbar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/Progressbar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM/Progressbar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/Progressbar.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/MainMenuVM.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/MainMenuVM/MainMenuVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/MainMenuVM/MainMenuVM.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/QuizFramework.UI.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UI/QuizFramework.UI.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Storage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Storage.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Storage/ILocalStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Storage/ILocalStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Storage/ILocalStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Storage/ILocalStorage.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Storage/LocalStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Storage/LocalStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Storage/LocalStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Storage/LocalStorage.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Storage/QuizFramework.Storage.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Storage/QuizFramework.Storage.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTests/QuizFramework.UnitTests.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/QuizFramework.UnitTests.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Utils.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/JsonSettingsUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Utils/JsonSettingsUtils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/JsonSettingsUtils.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Utils/JsonSettingsUtils.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/QuizFramework.Utils.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/QuizFramework.Utils.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LocalConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LocalConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/BootstrapInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/AdsConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Ads/AdsConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/AdsConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Ads/AdsConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ILocalConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/IQuestionDownloaderConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ILocalConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/IQuestionDownloaderConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ILocalQuestionsProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/ILocalQuestionsProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ILocalQuestionsProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/ILocalQuestionsProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/QuestionDownloaderConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalQuestionsProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalQuestionsProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/QuizFramework.Meta.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuizFramework.Meta.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,21 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Database/Questions/Question.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/JsonSettingsUtils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Config/Remote/SpreadsheetConfigDownloader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Config/Remote/IRemoteConfigDownloader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Meta/IVersionControlChecker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Meta/VersionControlChecker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Meta/IVersionChecker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Meta/VersionChecker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/VersionControlCheckerTests.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM/IProgressbar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM/Progressbar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/LoadingVM/LoadingVM.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UI/MainMenuVM/MainMenuVM.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Storage/ILocalStorage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Storage/LocalStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalQuestionDatabaseProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Config/Local/ILocalQuestionsProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" />
@@ -226,7 +135,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/LocalConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/AdsConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenMainMenuSignal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ISocialLinksConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/IQuestionConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuestionConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/IQuestionDownloaderConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuestionDownloaderConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/BootstrapInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/LoadingProgressReportSignal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/LoadingVM.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs" />
       </list>
     </option>
   </component>
@@ -303,6 +227,8 @@
       <workItem from="1625565736295" duration="675000" />
       <workItem from="1625720648025" duration="1636000" />
       <workItem from="1625734219545" duration="990000" />
+      <workItem from="1625735628827" duration="671000" />
+      <workItem from="1625987605950" duration="4828000" />
     </task>
     <servers />
   </component>
@@ -399,10 +325,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625237705494" />
-    <state x="771" y="198" key="RiderGenerateDialog" timestamp="1625497291323">
+    <state x="771" y="198" key="RiderGenerateDialog" timestamp="1625989616978">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="771" y="198" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625497291323" />
+    <state x="771" y="198" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625989616978" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1624011624363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -439,27 +365,13 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabaseLoader.cs</url>
           <line>37</line>
-          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Database\Questions\QuestionDatabaseLoader.cs" initialLine="35">
-            <startOffsets>
-              <option value="1495" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1532" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Database\Questions\QuestionDatabaseLoader.cs" initialLine="35" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabaseLoader.cs</url>
           <line>57</line>
-          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Database\Questions\QuestionDatabaseLoader.cs" initialLine="55">
-            <startOffsets>
-              <option value="2493" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2526" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Database\Questions\QuestionDatabaseLoader.cs" initialLine="55" />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>

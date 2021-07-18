@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d25e476b06754e2d8af3d79e3054193d, type: 3}
-  m_Name: AdsConfig
+  m_Script: {fileID: 11500000, guid: 2fb783819f2c4b41bd795d53d9606e81, type: 3}
+  m_Name: NotificationConfig
   m_EditorClassIdentifier: 
-  _adProjectId: 3456450
-  _rewardedPlacementId: ' rewardedVideo'
-  _interstitialPlacementId: ' video'
+  _minimumTimeInterval: 600
+  _minimumHourOfSend: 9
+  _maximumHourOfSend: 21

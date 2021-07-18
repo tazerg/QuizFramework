@@ -1,6 +1,9 @@
-﻿using QuizFramework.Advertisement;
+﻿using System.IO;
+using QuizFramework.Advertisement;
 using QuizFramework.EmailSenderToSelf;
 using QuizFramework.LocalConfig;
+using QuizFramework.Notifications;
+using UnityEngine;
 using Zenject;
 
 namespace QuizFramework.Installers
@@ -10,9 +13,18 @@ namespace QuizFramework.Installers
         public override void InstallBindings()
         {
             BindLocalConfigs();
+            BindNotificationDatabase();
 
             Container.BindInterfacesTo<UnityAdsService>().AsSingle().NonLazy();
             Container.BindInterfacesTo<EmailSenderToSelf.EmailSenderToSelf>().AsSingle();
+            Container.BindInterfacesTo<NotificationController>().AsSingle();
+            Container.BindInterfacesTo<NotificationsFactory>().AsSingle();
+
+#if UNITY_EDITOR
+            Container.BindInterfacesTo<DummyNotificationSender>().AsSingle();
+#elif UNITY_ANDROID
+            Container.BindInterfacesTo<AndroidNotificationSender>().AsSingle();
+#endif
         }
 
         private void BindLocalConfigs()
@@ -20,6 +32,21 @@ namespace QuizFramework.Installers
             Container.Bind<IAdsConfig>().To<AdsConfig>().FromScriptableObjectResource("AdsConfig").AsSingle();
             Container.Bind<ISocialNetworkConfig>().To<SocialNetworkConfig>().FromScriptableObjectResource("SocialNetworkConfig").AsSingle();
             Container.Bind<IEmailSenderToSelfConfig>().To<EmailSenderToSelfConfig>().FromScriptableObjectResource("EmailSenderToSelfConfig").AsSingle();
+            Container.Bind<INotificationConfig>().To<NotificationConfig>().FromScriptableObjectResource("NotificationConfig").AsSingle();
+        }
+
+        private void BindNotificationDatabase()
+        {
+            var path = $"{Application.dataPath}/Resources/NotificationsDatabase.csv";
+            if (!File.Exists(path))
+            {
+                Debug.LogError("Can't find notifications database asset!");
+                return;
+            }
+
+            var notificationsDatabaseString = File.ReadAllText(path);
+            var notificationDatabase = NotificationDatabaseLoader.LoadDatabase(notificationsDatabaseString);
+            Container.BindInstance<INotificationDatabase>(notificationDatabase).AsSingle();
         }
     }
 }

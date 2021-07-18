@@ -2,7 +2,8 @@
     "name": "QuizFramework.Core",
     "rootNamespace": "",
     "references": [
-        "GUID:ff6de30450f3748908ff580f6ec64d9a"
+        "GUID:ff6de30450f3748908ff580f6ec64d9a",
+        "GUID:ac145e6b8c6034cdbadc8c6e26aedbcf"
     ],
     "includePlatforms": [
         "Android",

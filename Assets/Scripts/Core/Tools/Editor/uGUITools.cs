@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 using UnityEngine;
 
 namespace QuizFramework.Tools
@@ -112,3 +113,4 @@ namespace QuizFramework.Tools
         }
     }
 }
+#endif

@@ -12,6 +12,8 @@ namespace QuizFramework.Tools
 {
     public class ConfigDownloader : MonoBehaviour
     {
+        private static readonly string QuestionsAssetPath = $"{Application.dataPath}/Resources/QuestionDatabase.json";
+
         [MenuItem("QuizFramework/Download question database")]
         private static async void DownloadQuestionDatabase()
         {
@@ -22,9 +24,8 @@ namespace QuizFramework.Tools
                 localConfig.QuestionsTabId, localConfig.AnswersStartIndex, localConfig.AnswersEndIndex);
             var questionDatabaseJson = JsonConvert.SerializeObject(questionDatabase, JsonSettingsUtils.JsonSettings);
 
-            var path = LocalQuestionsProvider.QuestionsAssetPath;
-            Directory.CreateDirectory(Path.GetDirectoryName(path)!);
-            File.WriteAllText(path, questionDatabaseJson);
+            Directory.CreateDirectory(Path.GetDirectoryName(QuestionsAssetPath)!);
+            File.WriteAllText(QuestionsAssetPath, questionDatabaseJson);
         }
     }
 }

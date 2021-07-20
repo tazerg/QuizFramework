@@ -1,4 +1,5 @@
 ﻿using System;
+using QuizFramework.Advertisement;
 using QuizFramework.LocalConfig;
 using QuizFramework.UI.Signals;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace QuizFramework.UI
     public class MainMenuVM : BaseWindowVM<OpenMainMenuSignal>
     {
         [Inject] private ISocialNetworkConfig SocialNetworkConfig { get; set; }
+        [Inject] private IAdsService AdsService { get; set; }
         
         [SerializeField] private Button _selectLevelButton;
         [SerializeField] private Button _moreGamesButton;
@@ -57,9 +59,17 @@ namespace QuizFramework.UI
         {
         }
 
-        private void OnSelectLevelButtonCLicked()
+        private async void OnSelectLevelButtonCLicked()
         {
-            throw new NotImplementedException();
+            //FOR TEST
+            if (!AdsService.IsReady(AdPlacement.Rewarded))
+            {
+                Debug.LogError("Ad not ready");
+                return;
+            }
+            
+            var adResult = await AdsService.ShowAd(AdPlacement.Rewarded);
+            Debug.Log($"Ads result {adResult}");
         }
 
         private void OnMoreGamesButtonClicked()

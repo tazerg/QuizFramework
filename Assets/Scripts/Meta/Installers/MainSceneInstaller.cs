@@ -1,5 +1,4 @@
-﻿using System.IO;
-using QuizFramework.Advertisement;
+﻿using QuizFramework.Advertisement;
 using QuizFramework.EmailSenderToSelf;
 using QuizFramework.LocalConfig;
 using QuizFramework.Notifications;
@@ -37,15 +36,14 @@ namespace QuizFramework.Installers
 
         private void BindNotificationDatabase()
         {
-            var path = $"{Application.dataPath}/Resources/NotificationsDatabase.csv";
-            if (!File.Exists(path))
+            var notificationsDatabaseAsset = Resources.Load<TextAsset>("NotificationsDatabase");
+            if (notificationsDatabaseAsset == null)
             {
                 Debug.LogError("Can't find notifications database asset!");
                 return;
             }
 
-            var notificationsDatabaseString = File.ReadAllText(path);
-            var notificationDatabase = NotificationDatabaseLoader.LoadDatabase(notificationsDatabaseString);
+            var notificationDatabase = NotificationDatabaseLoader.LoadDatabase(notificationsDatabaseAsset.text);
             Container.BindInstance<INotificationDatabase>(notificationDatabase).AsSingle();
         }
     }

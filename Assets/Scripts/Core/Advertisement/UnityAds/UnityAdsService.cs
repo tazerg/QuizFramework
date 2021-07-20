@@ -25,6 +25,7 @@ namespace QuizFramework.Advertisement
         private void Initialize()
         {
             UnityAds.Initialize(_adsConfig.AdProjectId);
+            LoadAllPlacements();
 
             ((UnityAdsShowListener) _adsShowListener).ShowAdResultReceived += OnAdsShowResultReceived;
         }
@@ -34,6 +35,21 @@ namespace QuizFramework.Advertisement
             ((UnityAdsShowListener) _adsShowListener).ShowAdResultReceived -= OnAdsShowResultReceived;
         }
 
+        private void LoadAllPlacements()
+        {
+            var placements = (AdPlacement[]) Enum.GetValues(typeof(AdPlacement));
+            foreach (var placement in placements)
+            {
+                if (placement == AdPlacement.None)
+                {
+                    continue;
+                }
+
+                var placementId = GetPlacementId(placement);
+                UnityAds.Load(placementId);
+            }
+        }
+        
         private bool IsReady(AdPlacement placement)
         {
             var placementId = GetPlacementId(placement);

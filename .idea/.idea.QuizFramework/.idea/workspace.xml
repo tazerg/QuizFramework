@@ -20,66 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/AndroidNotificationSender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/AndroidNotificationSender.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/DummyNotificationSender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/DummyNotificationSender.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotification.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotification.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationDatabase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationDatabase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationSender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationSender.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationDataDecorator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationDataDecorator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationDatabase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationDatabase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationId.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationId.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/ScheduledNotification.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/ScheduledNotification.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Utils/ParserUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Utils/ParserUtils.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Notifications.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Notifications/NotificationConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Notifications/NotificationConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/INotificationsFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/INotificationsFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationDatabaseLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationDatabaseLoader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationTrigger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/BaseNotification.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/BaseNotification.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/DayPassedNotification.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/DayPassedNotification.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationsFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationsFactory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/AdsConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AdsConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSenderToSelf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSenderToSelf.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/QuizFramework.Core.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/QuizFramework.Core.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/AndroidNotificationSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/AndroidNotificationSender.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/BaseNotification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/BaseNotification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,12 +55,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/01/89e93381/IProgress`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/34E43CFA-B1B5-4826-BB9D-E245BDD852DB/1e/ef946d5e/IAdsConfig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Runtime/Monetization/Analytics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/cb/6ef63592/UnityAdsShowCompletionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E7F43C3-8E21-4491-A21E-E815B941DBB6/5f/444fbd69/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A6C194-5F57-4474-95FC-AD42118554C7/52/4860bd5c/ServicePointManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADFA4B62-4008-4918-9388-DF71C9E26E89/49/805a0ab2/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A6C194-5F57-4474-95FC-AD42118554C7/ea/8f31ed11/SmtpClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/fa/e91a56f9/IUnityAdsShowListener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADFA4B62-4008-4918-9388-DF71C9E26E89/9b/cc928ff9/Application.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Tests/Runtime/Advertisement/ConfigurationTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Runtime/Monetization/IPurchasingAdapter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../TippingPoint/gpsgame/dinotanks_unity/Assets/Game/Scripts/Server/IAP/IapController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E5F87E79-497D-45AB-AFFE-AE0FF46C4D9E/31/3fcb0c15/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/34/e6301014/Environment.cs" root0="SKIP_HIGHLIGHTING" />
@@ -119,13 +80,19 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/51/d18b2a64/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADFA4B62-4008-4918-9388-DF71C9E26E89/ab/5bd36e2d/AsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Runtime/Advertisement/IUnityAdsListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Runtime/Advertisement/ShowOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/139400A5-8703-4777-9C48-EAEDE9B959AA/4d/1525b499/ClientServiceRequest`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Runtime/Monetization/IosAnalytics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.7.3/Runtime/Monetization/AndroidAnalytics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5B293C7-4049-457C-ABC2-8437C5A76392/a8/abba1cda/IInitializable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D1EB443-9232-48B1-8289-94AABE8AE823/7e/1bf2f275/Enum.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mobile.notifications@1.4.1/Runtime/Android/AndroidReceivedNotificationMainThreadDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7473C954-E0D6-45A4-A2BC-71901A1BE73A/27/9f635576/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/cc/724e6b1f/IUnityAdsShowListener.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/39536A03-EC01-488D-9573-F19141EF4B8B/32/5866ab9c/UnityWebRequestAsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ADFA4B62-4008-4918-9388-DF71C9E26E89/8e/c473636a/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/ProjectGeneration/ProjectGeneration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/39536A03-EC01-488D-9573-F19141EF4B8B/5f/7ee43338/UnityWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSenderToSelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/7e/9dcd761d/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -138,12 +105,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Notifications/NotificationsConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/Data/NotificationData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/Data/INotificationDatabase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Notifications/NotificationConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationSender.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/ScheduledNotification.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Notifications/NotificationDatabase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationDatabase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationDatabase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationData.cs" />
@@ -155,15 +120,27 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/INotificationsFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationsFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationDatabaseLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/DayPassedNotification.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/DummyNotificationSender.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/BaseNotification.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/DayPassedNotification.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/INotificationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/NotificationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/DummyNotificationSender.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/AndroidNotificationSender.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Runtime/Kernels/MonoKernel.cs" />
+      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.analytics@3.5.3/DataPrivacy/DataPrivacyButton.cs" />
+      <option value="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" />
+      <option value="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" />
+      <option value="$PROJECT_DIR$/QuizFramework.UnitTests.csproj" />
+      <option value="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" />
+      <option value="$PROJECT_DIR$/Zenject-Editor.csproj" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -195,16 +172,20 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1112">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="1112" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -245,7 +226,10 @@
       <workItem from="1625987605950" duration="18533000" />
       <workItem from="1626094595448" duration="4831000" />
       <workItem from="1626509871923" duration="8973000" />
-      <workItem from="1626591262625" duration="3333000" />
+      <workItem from="1626591262625" duration="5940000" />
+      <workItem from="1626619528161" duration="5367000" />
+      <workItem from="1626770794066" duration="7457000" />
+      <workItem from="1626787579773" duration="586000" />
     </task>
     <servers />
   </component>
@@ -273,17 +257,69 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationTrigger.cs</url>
-          <line>15</line>
-          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Meta\Notifications\NotificationTrigger.cs" initialLine="16" containingFunctionPresentation="method 'Awake'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs</url>
+          <line>60</line>
+          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Core\Advertisement\UnityAds\UnityAdsService.cs" initialLine="60" containingFunctionPresentation="method 'ShowAd'">
             <startOffsets>
-              <option value="448" />
+              <option value="1812" />
             </startOffsets>
             <endOffsets>
-              <option value="496" />
+              <option value="1856" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs</url>
+          <line>82</line>
+          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Core\Advertisement\UnityAds\UnityAdsService.cs" initialLine="82" containingFunctionPresentation="method 'OnAdsShowResultReceived'">
+            <startOffsets>
+              <option value="2645" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2685" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsShowListener.cs</url>
+          <line>12</line>
+          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Core\Advertisement\UnityAds\UnityAdsShowListener.cs" initialLine="12" containingFunctionPresentation="method 'OnUnityAdsShowFailure'">
+            <startOffsets>
+              <option value="355" />
+            </startOffsets>
+            <endOffsets>
+              <option value="423" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsShowListener.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Core\Advertisement\UnityAds\UnityAdsShowListener.cs" initialLine="18" containingFunctionPresentation="method 'OnUnityAdsShowClick'">
+            <startOffsets>
+              <option value="563" />
+            </startOffsets>
+            <endOffsets>
+              <option value="615" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsShowListener.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Unity_Projects\JillHaust Int\QuizFramework\Assets\Scripts\Core\Advertisement\UnityAds\UnityAdsShowListener.cs" initialLine="23" containingFunctionPresentation="method 'OnUnityAdsShowComplete'">
+            <startOffsets>
+              <option value="742" />
+            </startOffsets>
+            <endOffsets>
+              <option value="805" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

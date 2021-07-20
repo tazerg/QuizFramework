@@ -5,12 +5,10 @@ namespace QuizFramework.LocalConfig
 {
     public class LocalQuestionsProvider : ILocalQuestionsProvider
     {
-        public static readonly string QuestionsAssetPath = $"{Application.dataPath}/Resources/QuestionDatabase.json";
-        
         private string GetLocalQuestions()
         {
-            var localQuestionsJson = File.ReadAllText(QuestionsAssetPath);
-            return localQuestionsJson;
+            var questionsJsonAsset = Resources.Load<TextAsset>("QuestionDatabase");
+            return questionsJsonAsset.text;
         }
 
         #region ILocalQuestionsProvider

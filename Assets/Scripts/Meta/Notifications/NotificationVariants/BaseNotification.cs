@@ -47,7 +47,7 @@ namespace QuizFramework.Notifications
 
         void INotification.TrySendNotification()
         {
-            
+            TrySendNotification();
         }
 
         #endregion

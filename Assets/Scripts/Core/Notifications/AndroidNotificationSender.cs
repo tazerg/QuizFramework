@@ -9,6 +9,7 @@ namespace QuizFramework.Notifications
     {
         private const string NotificationChanelId = "jhi_quiz";
         private const string NotificationChanelName = "JHI Quiz";
+        private const string NotificationChanelDescription = "JHI Quiz notification chanel";
 
         //private const string SmallIconId = "";
         //private const string LargeIconId = "";
@@ -19,6 +20,7 @@ namespace QuizFramework.Notifications
             {
                 Id = NotificationChanelId,
                 Name = NotificationChanelName,
+                Description = NotificationChanelDescription,
                 Importance = Importance.Default,
                 LockScreenVisibility = LockScreenVisibility.Public,
                 CanShowBadge = true,
@@ -38,7 +40,7 @@ namespace QuizFramework.Notifications
                 FireTime = DateTime.Now.Add(notification.TimeSpan),
                 //SmallIcon = SmallIconId,
                 //LargeIcon = LargeIconId,
-                RepeatInterval = notification.RepeatInterval
+                RepeatInterval = notification.RepeatInterval,
             };
 
             AndroidNotificationCenter.SendNotification(notificationToSend, NotificationChanelId);

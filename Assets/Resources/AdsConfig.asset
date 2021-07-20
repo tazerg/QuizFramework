@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AdsConfig
   m_EditorClassIdentifier: 
   _adProjectId: 3456450
-  _rewardedPlacementId: ' rewardedVideo'
-  _interstitialPlacementId: ' video'
+  _rewardedPlacementId: rewardedVideo
+  _interstitialPlacementId: video

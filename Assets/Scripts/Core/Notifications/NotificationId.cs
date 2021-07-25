@@ -3,6 +3,10 @@
     public enum NotificationId
     {
         None = 0,
-        DayPassed = 1
+        
+        FirstTestNotification = 1,
+        SecondTestNotifications = 2,
+        
+        DayPassed = 3
     }
 }

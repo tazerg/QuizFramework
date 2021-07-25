@@ -1,4 +1,5 @@
 ﻿using QuizFramework.Advertisement;
+using QuizFramework.Core;
 using QuizFramework.EmailSenderToSelf;
 using QuizFramework.LocalConfig;
 using QuizFramework.Notifications;
@@ -18,6 +19,7 @@ namespace QuizFramework.Installers
             Container.BindInterfacesTo<EmailSenderToSelf.EmailSenderToSelf>().AsSingle();
             Container.BindInterfacesTo<NotificationController>().AsSingle();
             Container.BindInterfacesTo<NotificationsFactory>().AsSingle();
+            Container.BindInterfacesTo<ClientTImeProvider>().AsSingle();
 
 #if UNITY_EDITOR
             Container.BindInterfacesTo<DummyNotificationSender>().AsSingle();

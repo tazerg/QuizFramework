@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using QuizFramework.Core;
 
 namespace QuizFramework.Notifications
 {
@@ -9,15 +10,17 @@ namespace QuizFramework.Notifications
         private readonly INotificationConfig _notificationConfig;
         private readonly INotificationDatabase _notificationDatabase;
         private readonly INotificationSender _notificationSender;
+        private readonly ITimeProvider _timeProvider;
 
         private readonly HashSet<ScheduledNotification> _scheduledNotifications = new HashSet<ScheduledNotification>();
 
         public NotificationController(INotificationConfig notificationConfig, INotificationDatabase notificationDatabase,
-            INotificationSender notificationSender)
+            INotificationSender notificationSender, ITimeProvider timeProvider)
         {
             _notificationConfig = notificationConfig;
             _notificationDatabase = notificationDatabase;
             _notificationSender = notificationSender;
+            _timeProvider = timeProvider;
         }
 
         private void SendNotification(NotificationId notificationId, TimeSpan customTimeSpan = default)
@@ -42,7 +45,7 @@ namespace QuizFramework.Notifications
         private bool IsNotificationSent(NotificationId notificationId)
         {
             var scheduledNotification = _scheduledNotifications.FirstOrDefault(x => x.NotificationId == notificationId);
-            return scheduledNotification.NotificationId == notificationId;
+            return scheduledNotification.NotificationId == notificationId && scheduledNotification.ScheduleTime > _timeProvider.LocalTime;
         }
 
         private DateTime GetNotificationScheduleTime(NotificationId notificationId)
@@ -53,12 +56,12 @@ namespace QuizFramework.Notifications
         
         private NotificationDataDecorator CreateNotificationDecorator(NotificationData notification, TimeSpan timeSpan)
         {
-            var sendTime = DateTime.Now.Add(timeSpan);
+            var sendTime = _timeProvider.LocalTime.Add(timeSpan);
             sendTime = GetValidSendTime(sendTime);
 
             _scheduledNotifications.Add(new ScheduledNotification(notification.Id, sendTime));
 
-            return new NotificationDataDecorator(notification, sendTime.Subtract(DateTime.Now));
+            return new NotificationDataDecorator(notification, sendTime.Subtract(_timeProvider.LocalTime));
         }
 
         private DateTime GetValidSendTime(DateTime sendTime)

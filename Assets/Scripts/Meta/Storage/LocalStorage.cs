@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using QuizFramework.Database;
 using QuizFramework.Utils;
 using UnityEngine;
@@ -9,13 +10,27 @@ namespace QuizFramework.Storage
     {
         private const string LocalVersionKey = "version";
         private const string LocalQuestionsKey = "questions";
+        private const string PlayerIdKey = "playerId";
+        private const string MaxPassedLevelKey = "maxPassedLevel";
 
-        private const int DefaultLocalVersion = 0;
+        private const int IncorrectValue = -1;
+        private const int DefaultValue = 0;
         private const string DefaultLocalQuestions = "";
+
+        private int _cachedVersionNumber = IncorrectValue;
+        private int _cachedMaxPassedLevel = IncorrectValue;
+        private string _cachedPlayerId;
         
         private int GetLocalVersion()
         {
-            return PlayerPrefs.GetInt(LocalVersionKey, DefaultLocalVersion);
+            TrySetCachedIntValueFromPrefs(LocalVersionKey, ref _cachedVersionNumber);
+            return _cachedVersionNumber;
+        }
+
+        private int GetMaxPassedLevel()
+        {
+            TrySetCachedIntValueFromPrefs(MaxPassedLevelKey, ref _cachedMaxPassedLevel);
+            return _cachedMaxPassedLevel;
         }
 
         private string GetLocalQuestions()
@@ -23,22 +38,75 @@ namespace QuizFramework.Storage
             return PlayerPrefs.GetString(LocalQuestionsKey, DefaultLocalQuestions);
         }
 
+        private string GetPlayerId()
+        {
+            if (!string.IsNullOrEmpty(_cachedPlayerId))
+            {
+                return _cachedPlayerId;
+            }
+            
+            _cachedPlayerId = PlayerPrefs.GetString(PlayerIdKey);
+            if (!string.IsNullOrEmpty(_cachedPlayerId))
+            {
+                return _cachedPlayerId;
+            }
+
+            _cachedPlayerId = GeneratePlayerId();
+            SaveCachedValueToPrefs(PlayerIdKey, _cachedPlayerId);
+            PlayerPrefs.Save();
+            return _cachedPlayerId;
+        }
+
         private bool HasLocalStorage()
         {
             return PlayerPrefs.HasKey(LocalVersionKey);
         }
 
-        private void SaveVersionToLocal(int version)
+        private void SaveVersion(int version)
         {
-            PlayerPrefs.SetInt(LocalVersionKey, version);
+            _cachedVersionNumber = version;
+            
+            SaveCachedValueToPrefs(LocalVersionKey, _cachedVersionNumber);
+        }
+        
+        private void SaveMaxPassedLevel(int level)
+        {
+            _cachedMaxPassedLevel = level;
+
+            SaveCachedValueToPrefs(MaxPassedLevelKey, _cachedMaxPassedLevel);
+        }
+
+        private void SaveQuestion(IQuestionDatabase questionDatabase)
+        {
+            var questionsJson = JsonConvert.SerializeObject(questionDatabase, JsonSettingsUtils.JsonSettings);
+            SaveCachedValueToPrefs(LocalQuestionsKey, questionsJson);
+        }
+
+        private void TrySetCachedIntValueFromPrefs(string prefKey, ref int cachedValue)
+        {
+            if (cachedValue != IncorrectValue)
+            {
+                return;
+            }
+
+            cachedValue = PlayerPrefs.GetInt(prefKey, DefaultValue);
+        }
+
+        private void SaveCachedValueToPrefs(string prefKey, int cachedValue)
+        {
+            PlayerPrefs.SetInt(prefKey, cachedValue);
+            PlayerPrefs.Save();
+        }
+        
+        private void SaveCachedValueToPrefs(string prefKey, string cachedValue)
+        {
+            PlayerPrefs.SetString(prefKey, cachedValue);
             PlayerPrefs.Save();
         }
 
-        private void SaveQuestionToLocal(IQuestionDatabase questionDatabase)
+        private string GeneratePlayerId()
         {
-            var questionsJson = JsonConvert.SerializeObject(questionDatabase, JsonSettingsUtils.JsonSettings);
-            PlayerPrefs.SetString(LocalQuestionsKey, questionsJson);
-            PlayerPrefs.Save();
+            return Guid.NewGuid().ToString();
         }
 
         #region ILocalStorage
@@ -48,9 +116,19 @@ namespace QuizFramework.Storage
             return GetLocalVersion();
         }
 
+        int ILocalStorage.GetMaxPassedLevel()
+        {
+            return GetMaxPassedLevel();
+        }
+
         string ILocalStorage.GetLocalQuestions()
         {
             return GetLocalQuestions();
+        }
+
+        string ILocalStorage.GetPlayerId()
+        {
+            return GetPlayerId();
         }
 
         bool ILocalStorage.HasLocalVersion()
@@ -58,14 +136,19 @@ namespace QuizFramework.Storage
             return HasLocalStorage();
         }
 
-        void ILocalStorage.SaveVersionToLocal(int version)
+        void ILocalStorage.SaveVersion(int version)
         {
-            SaveVersionToLocal(version);
+            SaveVersion(version);
         }
 
-        void ILocalStorage.SaveQuestionsToLocal(IQuestionDatabase questionDatabase)
+        void ILocalStorage.SaveMaxPassedLevel(int level)
         {
-            SaveQuestionToLocal(questionDatabase);
+            SaveMaxPassedLevel(level);
+        }
+
+        void ILocalStorage.SaveQuestions(IQuestionDatabase questionDatabase)
+        {
+            SaveQuestion(questionDatabase);
         }
 
         #endregion

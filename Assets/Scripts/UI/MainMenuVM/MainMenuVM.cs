@@ -1,5 +1,6 @@
 ﻿using System;
 using QuizFramework.Advertisement;
+using QuizFramework.Analytics;
 using QuizFramework.LocalConfig;
 using QuizFramework.UI.Signals;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace QuizFramework.UI
     public class MainMenuVM : BaseWindowVM<OpenMainMenuSignal>
     {
         [Inject] private ISocialNetworkConfig SocialNetworkConfig { get; set; }
+        [Inject] private IRedirectAnalyticsStrategy RedirectAnalytics { get; set; }
         [Inject] private IAdsService AdsService { get; set; }
         
         [SerializeField] private Button _selectLevelButton;
@@ -74,11 +76,13 @@ namespace QuizFramework.UI
 
         private void OnMoreGamesButtonClicked()
         {
+            RedirectAnalytics.ReportOpenMoreGamesEvent();
             Application.OpenURL(SocialNetworkConfig.DeveloperPageLink);
         }
 
         private void OnVkLinkButtonClicked()
         {
+            RedirectAnalytics.ReportOpenSocialNetworkEvent("vk");
             Application.OpenURL(SocialNetworkConfig.VkLink);
         }
 

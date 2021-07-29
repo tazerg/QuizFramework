@@ -1,4 +1,4 @@
-﻿namespace QuizFramework.EmailSenderToSelf
+﻿namespace QuizFramework.EmailSender
 {
     public interface IEmailSenderToSelfConfig
     {

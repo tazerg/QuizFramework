@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Text;
-using QuizFramework.EmailSenderToSelf;
+using QuizFramework.Analytics;
+using QuizFramework.EmailSender;
 using QuizFramework.UI.Signals;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ namespace QuizFramework.UI
     public class SendQuestionVM : BaseWindowVM<OpenSendQuestionSignal>
     {
         [Inject] private IEmailSenderToSelf EmailSenderToSelf { get; set; }
+        [Inject] private IEmailSenderAnalyticsStrategy EmailSenderAnalytics { get; set; }
         
         [SerializeField] private Button _backButton;
         [SerializeField] private Button _sendQuestionButton;
@@ -68,7 +70,9 @@ namespace QuizFramework.UI
             var sendResult = await EmailSenderToSelf.SendEmail(message);
             
             SignalBus.Fire(new CloseLoadingSignal());
-
+            
+            ReportAnalyticsEvent(sendResult, message);
+            
             var resultPopupMessage = GetPopupResultMessage(sendResult);
             ShowPopup(resultPopupMessage);
 
@@ -123,6 +127,11 @@ namespace QuizFramework.UI
         private void ShowPopup(string message)
         {
             SignalBus.Fire(new ShowSendQuestionPopupSignal(message));
+        }
+
+        private void ReportAnalyticsEvent(EmailSendResult sendResult, string message)
+        {
+            EmailSenderAnalytics.ReportEvent(sendResult, message);
         }
 
         private string GetPopupResultMessage(EmailSendResult sendResult)

@@ -5,7 +5,7 @@ using System.Net.Mail;
 using System.Threading.Tasks;
 using Zenject;
 
-namespace QuizFramework.EmailSenderToSelf
+namespace QuizFramework.EmailSender
 {
     public class EmailSenderToSelf : IEmailSenderToSelf, IInitializable, IDisposable
     {

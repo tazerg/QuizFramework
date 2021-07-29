@@ -1,4 +1,4 @@
-﻿using QuizFramework.EmailSenderToSelf;
+﻿using QuizFramework.EmailSender;
 using UnityEngine;
 
 namespace QuizFramework.LocalConfig

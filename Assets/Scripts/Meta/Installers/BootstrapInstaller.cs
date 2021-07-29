@@ -17,7 +17,6 @@ namespace QuizFramework.Installers
             Container.Bind<IQuestionDatabaseLoader>().To<QuestionDatabaseLoader>().AsSingle();
             Container.Bind<ILocalQuestionsProvider>().To<LocalQuestionsProvider>().AsSingle();
             Container.Bind<IVersionChecker>().To<VersionChecker>().AsSingle();
-            Container.Bind<ILocalStorage>().To<LocalStorage>().AsSingle();
         }
     }
 }

@@ -58,8 +58,8 @@ namespace QuizFramework.Loading
             var questionDatabase = await _questionDatabaseLoader.LoadFromLocal(localStoredQuestions);
             ProjectContainer.BindInstance(questionDatabase).AsSingle();
             
-            _localStorage.SaveVersionToLocal(FirstVersion);
-            _localStorage.SaveQuestionsToLocal(questionDatabase);
+            _localStorage.SaveVersion(FirstVersion);
+            _localStorage.SaveQuestions(questionDatabase);
         }
 
         private async Task LoadFlow()
@@ -95,8 +95,8 @@ namespace QuizFramework.Loading
             
             _signalBus.Fire(new LoadingProgressReportSignal(0.4f, "Загружаем вопросы..."));
             
-            _localStorage.SaveVersionToLocal(_versionChecker.RemoteVersion.Value);
-            _localStorage.SaveQuestionsToLocal(remoteQuestionDatabase);
+            _localStorage.SaveVersion(_versionChecker.RemoteVersion.Value);
+            _localStorage.SaveQuestions(remoteQuestionDatabase);
         }
     }
 }

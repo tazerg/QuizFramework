@@ -20,26 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/LevelSelectedSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/LevelSelectedSignal.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSelectLevelSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSelectLevelSignal.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/IQuizController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/IQuizController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/QuizController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/QuizController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuizControllerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuizControllerTests.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AdsConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AdsConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Analytics/UnityAnalyticsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Analytics/UnityAnalyticsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainSceneCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainSceneCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/QuizFramework.Core.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/QuizFramework.Core.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,10 +104,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/DummyNotificationSender.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Editor/uGUITools.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ConfigDownloader.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/BaseNotification.cs" />
@@ -151,17 +140,21 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IRedirectAnalyticsStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/RedirectAnalyticsStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/BootstrapInstaller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/ProjectRootInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainSceneCanvas.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSelectLevelSignal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/LevelSelectedSignal.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Analytics/UnityAnalyticsService.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Analytics/UnityAnalyticsService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/QuizController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Quiz/IQuizController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Quiz/QuizController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuizControllerTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -193,10 +186,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17304">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="17304" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -260,7 +253,7 @@
       <workItem from="1627545437406" duration="2806000" />
       <workItem from="1627557598639" duration="6492000" />
       <workItem from="1627718660779" duration="1399000" />
-      <workItem from="1627733239915" duration="419000" />
+      <workItem from="1627733239915" duration="4037000" />
     </task>
     <servers />
   </component>

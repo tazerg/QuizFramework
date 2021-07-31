@@ -4,6 +4,7 @@ using QuizFramework.Core;
 using QuizFramework.EmailSender;
 using QuizFramework.LocalConfig;
 using QuizFramework.Notifications;
+using QuizFramework.Quiz;
 using UnityEngine;
 using Zenject;
 
@@ -20,6 +21,7 @@ namespace QuizFramework.Installers
             Container.BindInterfacesTo<UnityAdsService>().AsSingle().NonLazy();
             Container.BindInterfacesTo<EmailSenderToSelf>().AsSingle();
             Container.BindInterfacesTo<ClientTImeProvider>().AsSingle();
+            Container.BindInterfacesTo<QuizController>().AsSingle();
         }
 
         private void BindLocalConfigs()

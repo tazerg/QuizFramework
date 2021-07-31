@@ -61,17 +61,10 @@ namespace QuizFramework.UI
         {
         }
 
-        private async void OnSelectLevelButtonCLicked()
+        private void OnSelectLevelButtonCLicked()
         {
-            //FOR TEST
-            if (!AdsService.IsReady(AdPlacement.Rewarded))
-            {
-                Debug.LogError("Ad not ready");
-                return;
-            }
-            
-            var adResult = await AdsService.ShowAd(AdPlacement.Rewarded);
-            Debug.Log($"Ads result {adResult}");
+            SignalBus.Fire(new OpenSelectLevelSignal());
+            Close();
         }
 
         private void OnMoreGamesButtonClicked()
@@ -92,9 +85,17 @@ namespace QuizFramework.UI
             Close();
         }
 
-        private void OnSupportButtonClicked()
+        private async void OnSupportButtonClicked()
         {
-            throw new NotImplementedException();
+            //FOR TEST
+            if (!AdsService.IsReady(AdPlacement.Interstitial))
+            {
+                Debug.LogError("Ad not ready");
+                return;
+            }
+            
+            var adResult = await AdsService.ShowAd(AdPlacement.Interstitial);
+            Debug.Log($"Ads result {adResult}");
         }
     }
 }

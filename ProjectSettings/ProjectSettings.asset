@@ -768,7 +768,7 @@ PlayerSettings:
     Build: 0
     Collab: 0
     Game Performance: 0
-    Purchasing: 1
+    Purchasing: 0
     UDP: 0
     UNet: 0
     Unity Ads: 1
@@ -785,10 +785,10 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 4de0536f-6390-47e1-b460-3636817f182a
+  cloudProjectId: 66c199ab-0563-4b51-8066-152c314f3a92
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 'Ant Trip: The Runner Game'
+  projectName: QuizFramework
   organizationId: tazerg
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

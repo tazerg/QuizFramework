@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-
+using UnityEngine;
 using UnityAnalytics = UnityEngine.Analytics.Analytics;
 
 namespace QuizFramework.Analytics
@@ -8,7 +8,9 @@ namespace QuizFramework.Analytics
     {
         private void SetUserId(string userId)
         {
-            UnityAnalytics.SetUserId(userId);
+            UnityAnalytics.enabled = true;
+            var result = UnityAnalytics.SetUserId(userId);
+            Debug.Log($"Send user id {userId} result {result.ToString()}");
         }
 
         private void SendEvent(string eventId, IDictionary<string, object> eventArgs = null)
@@ -19,7 +21,8 @@ namespace QuizFramework.Analytics
                 return;
             }
 
-            UnityAnalytics.CustomEvent(eventId, eventArgs);
+            var result = UnityAnalytics.CustomEvent(eventId, eventArgs);
+            Debug.Log($"Send event {eventId} result {result.ToString()}");
         }
         
         #region IAnalyticsService

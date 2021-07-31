@@ -31,6 +31,11 @@ namespace QuizFramework.Database
             }
         }
 
+        private ushort GetQuestionGroupCount()
+        {
+            return (ushort) _questionGroups.Count;
+        }
+
         private IEnumerable<Question> GetAllGroupQuestion(ushort group)
         {
             if (!_questionGroups.TryGetValue(group, out var questions))
@@ -42,6 +47,11 @@ namespace QuizFramework.Database
         }
 
         #region IQuestionDatabase
+
+        ushort IQuestionDatabase.GetQuestionGroupCount()
+        {
+            return GetQuestionGroupCount();
+        }
 
         IEnumerable<Question> IQuestionDatabase.GetAllGroupQuestion(ushort group)
         {

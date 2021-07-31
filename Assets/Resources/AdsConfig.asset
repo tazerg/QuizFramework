@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25e476b06754e2d8af3d79e3054193d, type: 3}
   m_Name: AdsConfig
   m_EditorClassIdentifier: 
-  _adProjectId: 3456450
-  _rewardedPlacementId: rewardedVideo
-  _interstitialPlacementId: video
+  _adProjectId: 4241697
+  _rewardedPlacementId: Rewarded_Android
+  _interstitialPlacementId: Interstitial_Android

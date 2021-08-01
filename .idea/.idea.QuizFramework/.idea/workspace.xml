@@ -20,19 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/IQuizController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/IQuizController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/QuizController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/QuizController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuizControllerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuizControllerTests.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseQuizButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseQuizButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/AnswerSelectedSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/AnswerSelectedSignal.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenQuizResultSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenQuizResultSignal.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/QuizFramework.Core.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/QuizFramework.Core.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/IQuizController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/IQuizController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/QuizController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/QuizController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizFramework.UI.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/LevelSelectedSignal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/LevelSelectedSignal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,16 +112,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/Questions/LocalQuestionsProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Notifications/NotificationVariants/BaseNotification.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Notifications/AndroidNotificationSender.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" />
-      <option value="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Runtime/Kernels/MonoKernel.cs" />
-      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.analytics@3.5.3/DataPrivacy/DataPrivacyButton.cs" />
-      <option value="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" />
-      <option value="$PROJECT_DIR$/QuizFramework.UnitTests.csproj" />
-      <option value="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" />
       <option value="$PROJECT_DIR$/Zenject-Editor.csproj" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/CLientTImeProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/ITimeProvider.cs" />
@@ -145,16 +143,26 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSelectLevelSignal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/LevelSelectedSignal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Analytics/UnityAnalyticsService.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/QuizController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Quiz/IQuizController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Quiz/QuizController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuizControllerTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/LevelSelectedSignal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/AnswerSelectedSignal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenQuizResultVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenQuizResultSignal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/IQuizController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/QuizController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BaseQuizButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -186,10 +194,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17304">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3708">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17304" />
+      <option name="pid" value="3708" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -253,7 +261,8 @@
       <workItem from="1627545437406" duration="2806000" />
       <workItem from="1627557598639" duration="6492000" />
       <workItem from="1627718660779" duration="1399000" />
-      <workItem from="1627733239915" duration="4037000" />
+      <workItem from="1627733239915" duration="5187000" />
+      <workItem from="1627805836532" duration="8918000" />
     </task>
     <servers />
   </component>
@@ -276,5 +285,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs</url>
+          <line>52</line>
+          <properties documentPath="C:\Unity_Projects\GitHub\QuizFramework\Assets\Scripts\UI\QuizVM\QuizVM.cs" initialLine="52" containingFunctionPresentation="method 'OnHandleEvent'">
+            <startOffsets>
+              <option value="1697" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1739" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs</url>
+          <line>129</line>
+          <properties documentPath="C:\Unity_Projects\GitHub\QuizFramework\Assets\Scripts\UI\QuizVM\QuizVM.cs" initialLine="129" containingFunctionPresentation="method 'ShowAnswers'">
+            <startOffsets>
+              <option value="4129" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4175" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

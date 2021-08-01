@@ -13,8 +13,9 @@ namespace QuizFramework.UI
     {
         private const int RebuildLayoutMillisecondsDelay = 50;
         
-        [Inject] private IQuestionDatabase _questionDatabase;
-        [Inject] private ILocalStorage _localStorage;
+        [Inject] private readonly IQuestionDatabase _questionDatabase;
+        [Inject] private readonly ILocalStorage _localStorage;
+        [Inject] private readonly DiContainer _diContainer;
 
         [Header("Prefabs")]
         [SerializeField] private LevelButton _levelButtonPrefab;
@@ -79,6 +80,8 @@ namespace QuizFramework.UI
             for (var i = 0; i < questionsGroupCount; i++)
             {
                 var newLevelButton = Instantiate(_levelButtonPrefab, _levelButtonsParent.transform);
+                _diContainer.Inject(newLevelButton);
+                newLevelButton.Initialize();
                 var currentLevel = (ushort) (i + 1);
                 newLevelButton.SetLevel(currentLevel);
                 

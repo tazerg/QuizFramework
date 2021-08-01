@@ -6,7 +6,7 @@ namespace QuizFramework.UI
 {
     public abstract class BaseWindowVM<T> : MonoBehaviour, IWindow where T : struct
     {
-        [Inject] protected ISignalBus SignalBus { get; private set; }
+        [Inject] protected readonly ISignalBus SignalBus;
 
         protected void Close()
         {

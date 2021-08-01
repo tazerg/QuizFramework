@@ -9,6 +9,7 @@ namespace QuizFramework.Quiz
         private readonly IQuestionDatabase _questionDatabase;
 
         private bool _hasNextQuestion;
+        private int _questionsCount;
         private IEnumerator<Question> _currentGroupQuestions;
 
         public QuizController(IQuestionDatabase questionDatabase)
@@ -18,7 +19,7 @@ namespace QuizFramework.Quiz
 
         private bool InitializeQuestionGroup(ushort group)
         {
-            var questions = _questionDatabase.GetAllGroupQuestion(group);
+            var questions = _questionDatabase.GetAllGroupQuestion(group).ToList();
             if (!questions.Any())
             {
                 _hasNextQuestion = false;
@@ -27,6 +28,7 @@ namespace QuizFramework.Quiz
             }
 
             _hasNextQuestion = true;
+            _questionsCount = questions.Count;
             _currentGroupQuestions = questions.GetEnumerator();
             _currentGroupQuestions.MoveNext();
             return true;
@@ -46,6 +48,7 @@ namespace QuizFramework.Quiz
 
         #region IQuizController
 
+        int IQuizController.QuestionsCount => _questionsCount;
         bool IQuizController.HasNextQuestion => _hasNextQuestion;
         
         bool IQuizController.InitializeQuestionGroup(ushort group)

@@ -1,74 +1,41 @@
-﻿using QuizFramework.SignalBus;
-using QuizFramework.UI.Signals;
+﻿using QuizFramework.UI.Signals;
 using UnityEngine;
-using UnityEngine.UI;
-using Zenject;
 
 namespace QuizFramework.UI
 {
-    [RequireComponent(typeof(Button), typeof(Image))]
-    public class LevelButton : MonoBehaviour
+    public class LevelButton : BaseQuizButton
     {
-        [Inject] private ISignalBus _signalBus;
-        
-        private Button _button;
-        private Image _image;
-        private Text _text;
-
         private ushort _level;
-        private bool _isPassed;
-        private bool _isAvailable;
 
         public void SetLevel(ushort level)
         {
-            if (_level == level)
-            {
-                return;
-            }
-            
             _level = level;
-            _text.text = level.ToString();
+            Text.text = level.ToString();
         }
 
         public void SetPassed(bool isPassed)
         {
-            if (_isPassed == isPassed)
-            {
-                return;
-            }
-            
-            _isPassed = isPassed;
-            _image.color = isPassed ? Color.green : Color.white;
+            Image.color = isPassed ? Color.green : Color.white;
         }
 
         public void SetAvailable(bool isAvailable)
         {
-            if (_isAvailable == isAvailable)
+            if (_level == 1)
             {
+                Button.interactable = true;
                 return;
             }
-
-            _isAvailable = isAvailable;
-            _button.interactable = isAvailable;
-        }
-
-        private void Awake()
-        {
-            _button = GetComponent<Button>();
-            _image = GetComponent<Image>();
-            _text = GetComponentInChildren<Text>();
             
-            _button.onClick.AddListener(OnButtonCLicked);
+            Button.interactable = isAvailable;
         }
 
-        private void OnDestroy()
+        protected override void OnAwake()
         {
-            _button.onClick.RemoveListener(OnButtonCLicked);
         }
 
-        private void OnButtonCLicked()
+        protected override void OnButtonClicked()
         {
-            _signalBus.Fire(new LevelSelectedSignal(_level));
+            SignalBus.Fire(new LevelSelectedSignal(_level));
         }
     }
 }

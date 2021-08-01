@@ -2,7 +2,7 @@
 {
     public struct LevelSelectedSignal
     {
-        private ushort SelectedLevel { get; }
+        public ushort SelectedLevel { get; }
 
         public LevelSelectedSignal(ushort selectedLevel)
         {

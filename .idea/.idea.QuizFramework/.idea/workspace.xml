@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/RateUsPopupVM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/RateUsPopupVM.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowRateUsPopupSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowRateUsPopupSignal.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" afterDir="false" />
-    </list>
+    <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,7 +241,7 @@
       <workItem from="1627718660779" duration="1399000" />
       <workItem from="1627733239915" duration="5187000" />
       <workItem from="1627805836532" duration="11279000" />
-      <workItem from="1628315934072" duration="9660000" />
+      <workItem from="1628315934072" duration="10259000" />
     </task>
     <servers />
   </component>

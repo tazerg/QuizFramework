@@ -11,6 +11,7 @@ namespace QuizFramework.UI
     public class QuizResultVM : BaseWindowVM<OpenQuizResultSignal>
     {
         private const string ResultMessagePattern = "Твой результат: {0} из {1}. {2}";
+        private const int ShowRateUsNeededLevel = 5;
 
         [Inject] private readonly IQuizResultConfig _quizResultConfig;
         [Inject] private readonly IQuestionsFacade _questionsFacade;
@@ -69,6 +70,7 @@ namespace QuizFramework.UI
             _continueButton.gameObject.SetActive(_hasNextGroup && (isGroupPassed || hasOldestPassedGroup));
 
             TrySavePassedGroup(isGroupPassed, hasOldestPassedGroup);
+            TryShowRateUsPopup();
         }
 
         private void ShowResultMessage(int correctAnswersCount, int allQuestionsCount, float resultRatio)
@@ -90,6 +92,22 @@ namespace QuizFramework.UI
             }
             
             _localStorage.SaveMaxPassedLevel(_passedGroup);
+        }
+
+        private void TryShowRateUsPopup()
+        {
+            if (_passedGroup != ShowRateUsNeededLevel)
+            {
+                return;
+            }
+
+            var maxPassedLevel = _localStorage.GetMaxPassedLevel();
+            if (maxPassedLevel != ShowRateUsNeededLevel)
+            {
+                return;
+            }
+            
+            SignalBus.Fire(new ShowRateUsPopupSignal());
         }
 
         private void OnContinueButtonClicked()

@@ -20,31 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/IQuizResultConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/IQuizResultConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/QuizResultConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/QuizResultConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/QuizResultMessageInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/QuizResultMessageInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionsFacade.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionsFacade.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionsFacade.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionsFacade.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/RateUsPopupVM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/RateUsPopupVM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowRateUsPopupSignal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowRateUsPopupSignal.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Storage/LocalStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Storage/LocalStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenQuizResultSignal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenQuizResultSignal.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,10 +101,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/EmailSendResult.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/IEmailSenderToSelf.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/EmailSenderToSelf/IEmailSenderToSelfConfig.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/EmailSenderToSelf/EmailSenderToSelfConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Storage/ILocalStorage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/PlayerAnalyticsStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IEmailSenderAnalytics.cs" />
@@ -164,9 +145,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsShowListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowRateUsPopupSignal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/RateUsPopupVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -267,7 +252,7 @@
       <workItem from="1627718660779" duration="1399000" />
       <workItem from="1627733239915" duration="5187000" />
       <workItem from="1627805836532" duration="11279000" />
-      <workItem from="1628315934072" duration="7261000" />
+      <workItem from="1628315934072" duration="9660000" />
     </task>
     <servers />
   </component>
@@ -296,13 +281,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs</url>
-          <line>57</line>
+          <line>58</line>
           <properties documentPath="C:\Unity_Projects\GitHub\QuizFramework\Assets\Scripts\UI\QuizResultVM\QuizResultVM.cs" initialLine="57" containingFunctionPresentation="method 'OnHandleEvent'">
             <startOffsets>
-              <option value="2069" />
+              <option value="2122" />
             </startOffsets>
             <endOffsets>
-              <option value="2109" />
+              <option value="2162" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />

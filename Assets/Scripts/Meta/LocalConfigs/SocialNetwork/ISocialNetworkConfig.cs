@@ -4,5 +4,6 @@
     {
         string VkLink { get; }
         string DeveloperPageLink { get; }
+        string GamePageLink { get; }
     }
 }

@@ -90,10 +90,14 @@ namespace QuizFramework.UI
         {
             if (!_quizController.HasNextQuestion)
             {
+                SignalBus.Fire(new OpenLoadingSignal());
+                
                 await TryShowAd();
                 
                 SignalBus.Fire(new OpenQuizResultSignal(_currentQuestion.QuestionsGroup, _correctAnswersCount,
                     _groupQuestionsCount));
+                SignalBus.Fire(new CloseLoadingSignal());
+                
                 Close();
                 return;
             }

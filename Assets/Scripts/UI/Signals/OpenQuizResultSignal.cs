@@ -2,11 +2,15 @@
 {
     public struct OpenQuizResultSignal
     {
+        public ushort CurrentGroup { get; }
         public int CorrectAnswersCount { get; }
+        public int AllQuestionsCount { get; }
 
-        public OpenQuizResultSignal(int correctAnswersCount)
+        public OpenQuizResultSignal(ushort currentGroup, int correctAnswersCount, int allQuestionsCount)
         {
+            CurrentGroup = currentGroup;
             CorrectAnswersCount = correctAnswersCount;
+            AllQuestionsCount = allQuestionsCount;
         }
     }
 }

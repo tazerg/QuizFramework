@@ -65,14 +65,12 @@ namespace QuizFramework.Storage
         private void SaveVersion(int version)
         {
             _cachedVersionNumber = version;
-            
             SaveCachedValueToPrefs(LocalVersionKey, _cachedVersionNumber);
         }
         
         private void SaveMaxPassedLevel(int level)
         {
             _cachedMaxPassedLevel = level;
-
             SaveCachedValueToPrefs(MaxPassedLevelKey, _cachedMaxPassedLevel);
         }
 

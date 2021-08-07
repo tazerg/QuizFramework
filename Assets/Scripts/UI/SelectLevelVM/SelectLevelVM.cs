@@ -37,11 +37,15 @@ namespace QuizFramework.UI
             SpawnLevelButtons();
             
             _backButton.onClick.AddListener(OnBackButtonCLicked);
+            
+            SignalBus.Subscribe<LevelSelectedSignal>(Close);
         }
 
         protected override void OnDispose()
         {
             _backButton.onClick.RemoveListener(OnBackButtonCLicked);
+            
+            SignalBus.Unsubscribe<LevelSelectedSignal>(Close);
         }
 
         protected override void CheckReferences()
@@ -68,7 +72,7 @@ namespace QuizFramework.UI
             {
                 var levelButton = _spawnedLevelButtons[i];
                 var currentLevel = i + 1;
-                levelButton.SetAvailable(currentLevel + 1 <= maxPassedLevel);
+                levelButton.SetAvailable(currentLevel <= maxPassedLevel + 1);
                 levelButton.SetPassed(currentLevel <= maxPassedLevel);
             }
         }

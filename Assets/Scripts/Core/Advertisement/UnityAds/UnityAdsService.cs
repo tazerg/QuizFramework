@@ -61,6 +61,9 @@ namespace QuizFramework.Advertisement
             var placementId = GetPlacementId(placement);
             _taskCompletionSource = new TaskCompletionSource<AdShowResult>();
             UnityAds.Show(placementId, _adsShowListener);
+#if UNITY_EDITOR
+            return AdShowResult.Finished;
+#endif
             return await _taskCompletionSource.Task;
         }
 

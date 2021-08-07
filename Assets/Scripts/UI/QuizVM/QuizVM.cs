@@ -91,7 +91,10 @@ namespace QuizFramework.UI
             if (!_quizController.HasNextQuestion)
             {
                 await TryShowAd();
-                SignalBus.Fire(new OpenQuizResultSignal(_correctAnswersCount));
+                
+                SignalBus.Fire(new OpenQuizResultSignal(_currentQuestion.QuestionsGroup, _correctAnswersCount,
+                    _groupQuestionsCount));
+                Close();
                 return;
             }
 

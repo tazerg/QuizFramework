@@ -8,6 +8,7 @@ namespace QuizFramework.Database
         [JsonProperty("questions")] private readonly IEnumerable<Question> _allQuestions;
         
         [JsonIgnore] private IDictionary<ushort, List<Question>> _questionGroups;
+        [JsonIgnore] private readonly List<Question> _emptyList = new List<Question>();
         
         public QuestionDatabase(IEnumerable<Question> questions)
         {
@@ -38,12 +39,7 @@ namespace QuizFramework.Database
 
         private IEnumerable<Question> GetAllGroupQuestion(ushort group)
         {
-            if (!_questionGroups.TryGetValue(group, out var questions))
-            {
-                return new List<Question>();
-            }
-
-            return questions;
+            return _questionGroups.TryGetValue(group, out var questions) ? questions : _emptyList;
         }
 
         #region IQuestionDatabase

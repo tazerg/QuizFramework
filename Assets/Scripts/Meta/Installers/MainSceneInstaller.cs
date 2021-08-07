@@ -1,8 +1,10 @@
 ﻿using QuizFramework.Advertisement;
 using QuizFramework.Analytics;
 using QuizFramework.Core;
+using QuizFramework.Database;
 using QuizFramework.EmailSender;
 using QuizFramework.LocalConfig;
+using QuizFramework.LocalConfigs;
 using QuizFramework.Notifications;
 using QuizFramework.Quiz;
 using UnityEngine;
@@ -15,6 +17,7 @@ namespace QuizFramework.Installers
         public override void InstallBindings()
         {
             BindLocalConfigs();
+            BindFacades();
             BindNotifications();
             BindAnalytics();
 
@@ -30,6 +33,12 @@ namespace QuizFramework.Installers
             Container.Bind<ISocialNetworkConfig>().To<SocialNetworkConfig>().FromScriptableObjectResource("SocialNetworkConfig").AsSingle();
             Container.Bind<IEmailSenderToSelfConfig>().To<EmailSenderToSelfConfig>().FromScriptableObjectResource("EmailSenderToSelfConfig").AsSingle();
             Container.Bind<INotificationConfig>().To<NotificationConfig>().FromScriptableObjectResource("NotificationConfig").AsSingle();
+            Container.Bind<IQuizResultConfig>().To<QuizResultConfig>().FromScriptableObjectResource("QuizResultConfig").AsSingle();
+        }
+
+        private void BindFacades()
+        {
+            Container.Bind<IQuestionsFacade>().To<QuestionsFacade>().AsSingle();
         }
 
         private void BindNotifications()

@@ -3,6 +3,7 @@ using QuizFramework.Analytics;
 using QuizFramework.Core;
 using QuizFramework.Database;
 using QuizFramework.EmailSender;
+using QuizFramework.InApps;
 using QuizFramework.LocalConfig;
 using QuizFramework.LocalConfigs;
 using QuizFramework.Notifications;
@@ -22,8 +23,9 @@ namespace QuizFramework.Installers
             BindAnalytics();
 
             Container.BindInterfacesTo<UnityAdsService>().AsSingle().NonLazy();
+            Container.BindInterfacesTo<UnityInAppsService>().AsSingle().NonLazy();
             Container.BindInterfacesTo<EmailSenderToSelf>().AsSingle();
-            Container.BindInterfacesTo<ClientTImeProvider>().AsSingle();
+            Container.BindInterfacesTo<ClientTimeProvider>().AsSingle();
             Container.BindInterfacesTo<QuizController>().AsSingle();
         }
 
@@ -34,6 +36,7 @@ namespace QuizFramework.Installers
             Container.Bind<IEmailSenderToSelfConfig>().To<EmailSenderToSelfConfig>().FromScriptableObjectResource("EmailSenderToSelfConfig").AsSingle();
             Container.Bind<INotificationConfig>().To<NotificationConfig>().FromScriptableObjectResource("NotificationConfig").AsSingle();
             Container.Bind<IQuizResultConfig>().To<QuizResultConfig>().FromScriptableObjectResource("QuizResultConfig").AsSingle();
+            Container.Bind<IInAppsConfig>().To<InAppsConfig>().FromScriptableObjectResource("InAppsConfig").AsSingle();
         }
 
         private void BindFacades()

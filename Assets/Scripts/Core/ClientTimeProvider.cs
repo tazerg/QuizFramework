@@ -3,7 +3,7 @@ using Zenject;
 
 namespace QuizFramework.Core
 {
-    public class ClientTImeProvider : ITimeProvider, IInitializable
+    public class ClientTimeProvider : ITimeProvider, IInitializable
     {
         private TimeSpan _utcTimeOffset = TimeSpan.Zero;
 

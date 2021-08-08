@@ -13,7 +13,6 @@ namespace QuizFramework.UI
     {
         [Inject] private ISocialNetworkConfig SocialNetworkConfig { get; set; }
         [Inject] private IRedirectAnalyticsStrategy RedirectAnalytics { get; set; }
-        [Inject] private IAdsService AdsService { get; set; }
         
         [SerializeField] private Button _selectLevelButton;
         [SerializeField] private Button _moreGamesButton;
@@ -63,8 +62,8 @@ namespace QuizFramework.UI
 
         private void OnSelectLevelButtonCLicked()
         {
-            SignalBus.Fire(new OpenSelectLevelSignal());
             Close();
+            SignalBus.Fire(new OpenSelectLevelSignal());
         }
 
         private void OnMoreGamesButtonClicked()
@@ -81,21 +80,14 @@ namespace QuizFramework.UI
 
         private void OnSendQuestionButtonClicked()
         {
-            SignalBus.Fire(new OpenSendQuestionSignal());
             Close();
+            SignalBus.Fire(new OpenSendQuestionSignal());
         }
 
-        private async void OnSupportButtonClicked()
+        private void OnSupportButtonClicked()
         {
-            //FOR TEST
-            if (!AdsService.IsReady(AdPlacement.Interstitial))
-            {
-                Debug.LogError("Ad not ready");
-                return;
-            }
-            
-            var adResult = await AdsService.ShowAd(AdPlacement.Interstitial);
-            Debug.Log($"Ads result {adResult}");
+            Close();
+            SignalBus.Fire(new OpenSupportSignal());
         }
     }
 }

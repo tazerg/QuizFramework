@@ -36,14 +36,14 @@ namespace QuizFramework.UI
             _isLayoutRebuilded = false;
             SpawnLevelButtons();
             
-            _backButton.onClick.AddListener(OnBackButtonCLicked);
+            _backButton.onClick.AddListener(OnBackButtonClicked);
             
             SignalBus.Subscribe<LevelSelectedSignal>(Close);
         }
 
         protected override void OnDispose()
         {
-            _backButton.onClick.RemoveListener(OnBackButtonCLicked);
+            _backButton.onClick.RemoveListener(OnBackButtonClicked);
             
             SignalBus.Unsubscribe<LevelSelectedSignal>(Close);
         }
@@ -109,7 +109,7 @@ namespace QuizFramework.UI
             _isLayoutRebuilded = true;
         }
 
-        private void OnBackButtonCLicked()
+        private void OnBackButtonClicked()
         {
             SignalBus.Fire(new OpenMainMenuSignal());
             Close();

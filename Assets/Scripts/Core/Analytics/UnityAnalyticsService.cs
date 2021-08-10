@@ -9,8 +9,7 @@ namespace QuizFramework.Analytics
         private void SetUserId(string userId)
         {
             UnityAnalytics.enabled = true;
-            var result = UnityAnalytics.SetUserId(userId);
-            Debug.Log($"Send user id {userId} result {result.ToString()}");
+            UnityAnalytics.SetUserId(userId);
         }
 
         private void SendEvent(string eventId, IDictionary<string, object> eventArgs = null)
@@ -21,8 +20,7 @@ namespace QuizFramework.Analytics
                 return;
             }
 
-            var result = UnityAnalytics.CustomEvent(eventId, eventArgs);
-            Debug.Log($"Send event {eventId} result {result.ToString()}");
+            UnityAnalytics.CustomEvent(eventId, eventArgs);
         }
         
         #region IAnalyticsService

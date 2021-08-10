@@ -53,6 +53,7 @@ namespace QuizFramework.UI
             var quizGroup = eventParams.SelectedLevel;
             if (_quizController.InitializeQuestionGroup(quizGroup))
             {
+                _correctAnswersCount = 0;
                 _currentProgress = 0;
                 _groupQuestionsCount = _quizController.QuestionsCount;
                 TryShowNextQuestion();

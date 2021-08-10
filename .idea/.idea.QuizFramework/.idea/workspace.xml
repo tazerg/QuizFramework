@@ -20,29 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IPlayerAnalyticsStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IPlayerAnalyticsStrategy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IQuizAnalyticsStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IQuizAnalyticsStrategy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/ISupportAnalyticsStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/ISupportAnalyticsStrategy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/QuizAnalyticsStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/QuizAnalyticsStrategy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/SupportAnalyticsStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/SupportAnalyticsStrategy.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/BaseAnalyticsStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/BaseAnalyticsStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/PlayerAnalyticsStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/PlayerAnalyticsStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/ProjectRootInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/ProjectRootInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/SupportProductSelected.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/SupportProductSelected.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +110,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/QuizResultConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsShowListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/ISocialNetworkConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowRateUsPopupSignal.cs" />
@@ -168,6 +146,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IQuizAnalyticsStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/QuizAnalyticsStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -270,7 +249,7 @@
       <workItem from="1627805836532" duration="11279000" />
       <workItem from="1628315934072" duration="14689000" />
       <workItem from="1628409930405" duration="4782000" />
-      <workItem from="1628573897671" duration="9881000" />
+      <workItem from="1628573897671" duration="10608000" />
     </task>
     <servers />
   </component>

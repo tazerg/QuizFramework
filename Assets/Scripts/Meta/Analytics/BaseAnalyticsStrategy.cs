@@ -5,7 +5,7 @@ namespace QuizFramework.Analytics
 {
     public abstract class BaseAnalyticsStrategy
     {
-        private readonly IDictionary<string, object> _globalArgs = new Dictionary<string, object>();
+        private static readonly IDictionary<string, object> _globalArgs = new Dictionary<string, object>();
         
         protected IAnalyticsService AnalyticsService { get; }
         protected ILocalStorage LocalStorage { get; }

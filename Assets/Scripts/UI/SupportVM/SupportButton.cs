@@ -20,7 +20,7 @@ namespace QuizFramework.UI
 
         protected override void OnButtonClicked()
         {
-            SignalBus.Fire(new SupportProductSelected(_info.Id));
+            SignalBus.Fire(new SupportProductSelected(_info.Id, _info.Name));
         }
     }
 }

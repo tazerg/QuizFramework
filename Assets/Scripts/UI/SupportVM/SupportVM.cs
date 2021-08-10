@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using QuizFramework.Analytics;
 using QuizFramework.InApps;
 using QuizFramework.UI.Signals;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace QuizFramework.UI
     {
         [Inject] private readonly IInAppsService _inAppsService;
         [Inject] private readonly IInAppsConfig _inAppsConfig;
+        [Inject] private readonly ISupportAnalyticsStrategy _supportAnalytics;
         [Inject] private readonly DiContainer _diContainer;
         
         [Header("Prefabs")]
@@ -53,6 +55,7 @@ namespace QuizFramework.UI
         {
             if (!TryShowErrorPopup())
             {
+                _supportAnalytics.OpenSupportWindowEvent();
                 return;
             }
             
@@ -83,6 +86,7 @@ namespace QuizFramework.UI
 
         private void OnProductSelected(SupportProductSelected signal)
         {
+            _supportAnalytics.StartBuyingProductEvent(signal.ProductId, signal.ProductName);
             _inAppsService.PurchaseProduct(signal.ProductId);
         }
         

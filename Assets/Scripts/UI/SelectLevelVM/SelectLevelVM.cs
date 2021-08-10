@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using QuizFramework.Analytics;
 using QuizFramework.Database;
 using QuizFramework.Storage;
 using QuizFramework.UI.Signals;
@@ -13,6 +14,7 @@ namespace QuizFramework.UI
     {
         private const int RebuildLayoutMillisecondsDelay = 50;
         
+        [Inject] private readonly IQuizAnalyticsStrategy _quizAnalyticsStrategy;
         [Inject] private readonly IQuestionDatabase _questionDatabase;
         [Inject] private readonly ILocalStorage _localStorage;
         [Inject] private readonly DiContainer _diContainer;
@@ -38,14 +40,14 @@ namespace QuizFramework.UI
             
             _backButton.onClick.AddListener(OnBackButtonClicked);
             
-            SignalBus.Subscribe<LevelSelectedSignal>(Close);
+            SignalBus.Subscribe<LevelSelectedSignal>(OnLevelSelected);
         }
 
         protected override void OnDispose()
         {
             _backButton.onClick.RemoveListener(OnBackButtonClicked);
             
-            SignalBus.Unsubscribe<LevelSelectedSignal>(Close);
+            SignalBus.Unsubscribe<LevelSelectedSignal>(OnLevelSelected);
         }
 
         protected override void CheckReferences()
@@ -107,6 +109,12 @@ namespace QuizFramework.UI
 
             _levelButtonsParent.enabled = false;
             _isLayoutRebuilded = true;
+        }
+
+        private void OnLevelSelected(LevelSelectedSignal signal)
+        {
+            _quizAnalyticsStrategy.QuestionsGroupSelectedEvent(signal.SelectedLevel);
+            Close();
         }
 
         private void OnBackButtonClicked()

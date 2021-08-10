@@ -24,6 +24,11 @@ namespace QuizFramework.VersionControl
         private async Task<bool> IsCorrectVersion(string configPath, string versionConfigId)
         {
             var remoteVersionTab = await _remoteConfigDownloader.DownloadConfig(configPath, versionConfigId);
+            if (remoteVersionTab.Count == 0)
+            {
+                return true;
+            }
+            
             var remoteVersionArray = remoteVersionTab[0].Split(Separator);
             if (!int.TryParse(remoteVersionArray[VersionTabValueIndex], out var remoteVersion))
             {

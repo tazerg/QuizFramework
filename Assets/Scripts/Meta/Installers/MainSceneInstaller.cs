@@ -59,10 +59,10 @@ namespace QuizFramework.Installers
 
         private void BindAnalytics()
         {
-            Container.BindInterfacesTo<UnityAnalyticsService>().AsSingle();
-            Container.BindInterfacesTo<PlayerAnalyticsStrategy>().AsSingle().NonLazy();
             Container.BindInterfacesTo<EmailSenderAnalyticsStrategy>().AsSingle();
             Container.BindInterfacesTo<RedirectAnalyticsStrategy>().AsSingle();
+            Container.BindInterfacesTo<SupportAnalyticsStrategy>().AsSingle();
+            Container.BindInterfacesTo<QuizAnalyticsStrategy>().AsSingle();
         }
 
         private void BindNotificationDatabase()

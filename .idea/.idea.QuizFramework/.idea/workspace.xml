@@ -20,45 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/IInAppsConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/IInAppsConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/IInAppsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/IInAppsService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/InAppInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/InAppInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/InAppType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/InAppType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/UnityInApps.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/UnityInApps/UnityInAppsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InApps/UnityInApps/UnityInAppsService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/InApps.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/InApps/InAppsConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/InApps/InAppsConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MessagePopupVM.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MessagePopupVM/MessagePopupVM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MessagePopupVM/MessagePopupVM.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSupportSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSupportSignal.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowMessagePopupSignal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowMessagePopupSignal.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/SupportProductSelected.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/SupportProductSelected.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportVM.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportVM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IPlayerAnalyticsStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IPlayerAnalyticsStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IQuizAnalyticsStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IQuizAnalyticsStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/ISupportAnalyticsStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/ISupportAnalyticsStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/QuizAnalyticsStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/QuizAnalyticsStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/SupportAnalyticsStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/SupportAnalyticsStrategy.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ClientTImeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ClientTimeProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/QuizFramework.Core.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/QuizFramework.Core.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/BaseAnalyticsStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/BaseAnalyticsStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/PlayerAnalyticsStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/PlayerAnalyticsStrategy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/ProjectRootInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/ProjectRootInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/SupportProductSelected.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/SupportProductSelected.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportVM.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,12 +71,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/fa/e91a56f9/IUnityAdsShowListener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@3.2.3/Runtime/Purchasing/IStoreListener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../TippingPoint/gpsgame/dinotanks_unity/Assets/Game/Scripts/Server/IAP/IapController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D1EB443-9232-48B1-8289-94AABE8AE823/5c/f2567ede/TaskCompletionSource`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/fa/0b857751/TestAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/85/ef99f972/UnityAdsShowError.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EmailSender/EmailSenderToSelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@3.2.3/Runtime/Purchasing/PurchaseEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/06/24646300/IUnityAdsInitializationListener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/51/d18b2a64/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/20CB1003-ECDB-4D69-99E2-F2D8F4A2A05B/fc/2dcfa7e2/UnityWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@3.2.3/Runtime/Purchasing/PurchaseProcessingResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@3.2.3/Runtime/Purchasing/ProductMetadata.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D1EB443-9232-48B1-8289-94AABE8AE823/d3/5efd1752/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
@@ -131,19 +117,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/QuizController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Quiz/IQuizController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Quiz/QuizController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/QuizControllerTests.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/LevelSelectedSignal.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/AnswerSelectedSignal.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenQuizResultVM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BaseWindowVM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/IQuizController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Quiz/QuizController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BaseQuizButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenQuizResultSignal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/IQuizResultMessageConfig.cs" />
@@ -163,7 +136,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/SocialNetwork/SocialNetworkConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowRateUsPopupSignal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/RateUsPopupVM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/InApps/IInAppService.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/InApps/IInAppsConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/InApps/InAppType.cs" />
@@ -174,14 +146,28 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/InApps/InApps.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/InApps/InAppsConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSupportSignal.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/SupportProductSelected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowMessagePopupSignal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MessagePopupVM/MessagePopupVM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportVM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Extensions/AsyncOperationExtension.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/RemoteConfigDownloader/SpreadsheetConfigDownloader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/ISupportAnalyticsStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/SupportAnalyticsStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/SupportProductSelected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SupportVM/SupportVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IPlayerAnalyticsStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/BaseAnalyticsStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/PlayerAnalyticsStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/ProjectRootInstaller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IQuizAnalyticsStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/QuizAnalyticsStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -213,10 +199,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9656">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="9656" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -283,7 +269,8 @@
       <workItem from="1627733239915" duration="5187000" />
       <workItem from="1627805836532" duration="11279000" />
       <workItem from="1628315934072" duration="14689000" />
-      <workItem from="1628409930405" duration="4426000" />
+      <workItem from="1628409930405" duration="4782000" />
+      <workItem from="1628573897671" duration="9881000" />
     </task>
     <servers />
   </component>
@@ -312,16 +299,29 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs</url>
-          <line>58</line>
+          <line>60</line>
           <properties documentPath="C:\Unity_Projects\GitHub\QuizFramework\Assets\Scripts\UI\QuizResultVM\QuizResultVM.cs" initialLine="57" containingFunctionPresentation="method 'OnHandleEvent'">
             <startOffsets>
-              <option value="2122" />
+              <option value="2226" />
             </startOffsets>
             <endOffsets>
-              <option value="2162" />
+              <option value="2266" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Unity_Projects\GitHub\QuizFramework\Assets\Scripts\Meta\VesrionControl\VersionChecker.cs" initialLine="26" containingFunctionPresentation="method 'IsCorrectVersion'">
+            <startOffsets>
+              <option value="1069" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1131" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

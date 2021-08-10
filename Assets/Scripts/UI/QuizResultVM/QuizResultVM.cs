@@ -1,4 +1,5 @@
-﻿using QuizFramework.Database;
+﻿using QuizFramework.Analytics;
+using QuizFramework.Database;
 using QuizFramework.LocalConfigs;
 using QuizFramework.Storage;
 using QuizFramework.UI.Signals;
@@ -13,6 +14,7 @@ namespace QuizFramework.UI
         private const string ResultMessagePattern = "Твой результат: {0} из {1}. {2}";
         private const int ShowRateUsNeededLevel = 5;
 
+        [Inject] private readonly IQuizAnalyticsStrategy _quizAnalytics;
         [Inject] private readonly IQuizResultConfig _quizResultConfig;
         [Inject] private readonly IQuestionsFacade _questionsFacade;
         [Inject] private readonly ILocalStorage _localStorage;
@@ -69,6 +71,7 @@ namespace QuizFramework.UI
             var hasOldestPassedGroup = maxPassedGroup >= _passedGroup;
             _continueButton.gameObject.SetActive(_hasNextGroup && (isGroupPassed || hasOldestPassedGroup));
 
+            _quizAnalytics.QuestionsGroupPassedEvent(_passedGroup, maxPassedGroup, correctAnswersCount, allQuestionsCount, isGroupPassed);
             TrySavePassedGroup(isGroupPassed, hasOldestPassedGroup);
             TryShowRateUsPopup();
         }

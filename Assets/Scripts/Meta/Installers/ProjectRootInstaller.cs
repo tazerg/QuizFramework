@@ -1,4 +1,5 @@
-﻿using QuizFramework.SignalBus;
+﻿using QuizFramework.Analytics;
+using QuizFramework.SignalBus;
 using QuizFramework.Storage;
 using Zenject;
 
@@ -10,6 +11,9 @@ namespace QuizFramework.Installers
         {
             Container.Bind<ISignalBus>().To<SignalBus.SignalBus>().AsSingle();
             Container.Bind<ILocalStorage>().To<LocalStorage>().AsSingle();
+            
+            Container.BindInterfacesTo<UnityAnalyticsService>().AsSingle();
+            Container.BindInterfacesTo<PlayerAnalyticsStrategy>().AsSingle().NonLazy();
         }
     }
 }

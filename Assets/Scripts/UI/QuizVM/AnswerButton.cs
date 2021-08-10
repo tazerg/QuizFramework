@@ -1,5 +1,5 @@
-﻿using QuizFramework.UI.Signals;
-using UnityEngine;
+﻿using QuizFramework.LocalConfigs;
+using QuizFramework.UI.Signals;
 
 namespace QuizFramework.UI
 {
@@ -10,12 +10,14 @@ namespace QuizFramework.UI
         public void SetText(string answer)
         {
             Text.text = answer;
-            Image.color = Color.white;
         }
 
         public void SetInteractable(bool isInteractable)
         {
             Button.interactable = isInteractable;
+            
+            var buttonType = isInteractable ? ButtonType.Active : ButtonType.Inactive;
+            SetButtonColor(buttonType);
         }
 
         public void SetVisible(bool isVisible)
@@ -35,7 +37,8 @@ namespace QuizFramework.UI
 
         private void AnswerSelectedCallback(bool isCorrect)
         {
-            Image.color = isCorrect ? Color.green : Color.red;
+            var buttonType = isCorrect ? ButtonType.Correct : ButtonType.Incorrect;
+            SetButtonColor(buttonType);
         }
     }
 }

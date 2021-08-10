@@ -20,8 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonColorsConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonColorsConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/IButtonColorsConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/IButtonColorsConfig.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/BaseQuizButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseQuizButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,11 +106,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenQuizResultSignal.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/IQuizResultMessageConfig.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/QuizResultMessageInfo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/QuizResultMessageConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionsFacade.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" />
@@ -140,13 +145,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/PlayerAnalyticsStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Loading/MetaLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/ProjectRootInstaller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/IQuizAnalyticsStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Analytics/QuizAnalyticsStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizResultVM/QuizResultVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/IButtonColorsConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonColorsConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/QuizVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BaseQuizButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -249,7 +259,8 @@
       <workItem from="1627805836532" duration="11279000" />
       <workItem from="1628315934072" duration="14689000" />
       <workItem from="1628409930405" duration="4782000" />
-      <workItem from="1628573897671" duration="10608000" />
+      <workItem from="1628573897671" duration="11197000" />
+      <workItem from="1628602712638" duration="1809000" />
     </task>
     <servers />
   </component>
@@ -290,17 +301,17 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\Unity_Projects\GitHub\QuizFramework\Assets\Scripts\Meta\VesrionControl\VersionChecker.cs" initialLine="26" containingFunctionPresentation="method 'IsCorrectVersion'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs</url>
+          <line>53</line>
+          <properties documentPath="C:\Unity_Projects\GitHub\QuizFramework\Assets\Scripts\UI\SelectLevelVM\LevelButton.cs" initialLine="53" containingFunctionPresentation="method 'SetButtonColor'">
             <startOffsets>
-              <option value="1069" />
+              <option value="1250" />
             </startOffsets>
             <endOffsets>
-              <option value="1131" />
+              <option value="1264" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -74,8 +74,9 @@ namespace QuizFramework.UI
             {
                 var levelButton = _spawnedLevelButtons[i];
                 var currentLevel = i + 1;
-                levelButton.SetAvailable(currentLevel <= maxPassedLevel + 1);
-                levelButton.SetPassed(currentLevel <= maxPassedLevel);
+                var isAvailable = currentLevel <= maxPassedLevel + 1;
+                var isPassed = currentLevel <= maxPassedLevel;
+                levelButton.Setup(isAvailable, isPassed);
             }
         }
 

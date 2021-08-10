@@ -37,6 +37,7 @@ namespace QuizFramework.Installers
             Container.Bind<INotificationConfig>().To<NotificationConfig>().FromScriptableObjectResource("NotificationConfig").AsSingle();
             Container.Bind<IQuizResultConfig>().To<QuizResultConfig>().FromScriptableObjectResource("QuizResultConfig").AsSingle();
             Container.Bind<IInAppsConfig>().To<InAppsConfig>().FromScriptableObjectResource("InAppsConfig").AsSingle();
+            Container.Bind<IButtonColorsConfig>().To<ButtonColorsConfig>().FromScriptableObjectResource("ButtonColorsConfig").AsSingle();
         }
 
         private void BindFacades()

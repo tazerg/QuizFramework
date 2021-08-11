@@ -19,20 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonColorsConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonColorsConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/ButtonType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/IButtonColorsConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/ButtonColors/IButtonColorsConfig.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/BaseQuizButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseQuizButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/QuizVM/AnswerButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" afterDir="false" />
-    </list>
+    <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +93,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionDatabase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionsFacade.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionsFacade.cs" />
@@ -157,6 +143,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Installers/MainSceneInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Analytics/UnityAnalyticsService.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -260,7 +247,7 @@
       <workItem from="1628315934072" duration="14689000" />
       <workItem from="1628409930405" duration="4782000" />
       <workItem from="1628573897671" duration="11197000" />
-      <workItem from="1628602712638" duration="1809000" />
+      <workItem from="1628602712638" duration="2130000" />
     </task>
     <servers />
   </component>

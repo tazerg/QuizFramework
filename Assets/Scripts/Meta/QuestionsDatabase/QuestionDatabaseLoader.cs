@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using QuizFramework.RemoteConfig;
@@ -38,7 +39,7 @@ namespace QuizFramework.Database
             var questions = new List<Question>();
             for (var i = StartQuestionsRow; i < questionsTab.Count; i++)
             {
-                var questionFields = questionsTab[i].Split(Separator);
+                var questionFields = CsvLineParser.Split(questionsTab[i], Separator).ToArray();
                 var question = new Question
                 {
                     QuestionsGroup = ushort.Parse(questionFields[QuestionGroupValueIndex]),

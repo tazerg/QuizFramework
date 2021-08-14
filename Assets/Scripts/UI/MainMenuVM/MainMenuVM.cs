@@ -1,6 +1,4 @@
-﻿using System;
-using QuizFramework.Advertisement;
-using QuizFramework.Analytics;
+﻿using QuizFramework.Analytics;
 using QuizFramework.LocalConfig;
 using QuizFramework.UI.Signals;
 using UnityEngine;
@@ -19,6 +17,7 @@ namespace QuizFramework.UI
         [SerializeField] private Button _vkLinkButton;
         [SerializeField] private Button _sendQuestionButton;
         [SerializeField] private Button _supportButton;
+        [SerializeField] private Button _exitButton;
 
         protected override void OnInitialize()
         {
@@ -27,6 +26,7 @@ namespace QuizFramework.UI
             _vkLinkButton.onClick.AddListener(OnVkLinkButtonClicked);
             _sendQuestionButton.onClick.AddListener(OnSendQuestionButtonClicked);
             _supportButton.onClick.AddListener(OnSupportButtonClicked);
+            _exitButton.onClick.AddListener(OnExitButtonClicked);
         }
 
         protected override void OnDispose()
@@ -36,6 +36,7 @@ namespace QuizFramework.UI
             _vkLinkButton.onClick.RemoveListener(OnVkLinkButtonClicked);
             _sendQuestionButton.onClick.RemoveListener(OnSendQuestionButtonClicked);
             _supportButton.onClick.RemoveListener(OnSupportButtonClicked);
+            _exitButton.onClick.RemoveListener(OnExitButtonClicked);
         }
 
         protected override void CheckReferences()
@@ -54,6 +55,9 @@ namespace QuizFramework.UI
             
             if (_supportButton == null)
                 Debug.LogError("Support button not set!");
+            
+            if (_exitButton == null) 
+                Debug.LogError("Exit button not set!");
         }
         
         protected override void OnHandleEvent(OpenMainMenuSignal eventParams)
@@ -88,6 +92,11 @@ namespace QuizFramework.UI
         {
             Close();
             SignalBus.Fire(new OpenSupportSignal());
+        }
+
+        private void OnExitButtonClicked()
+        {
+            Application.Quit();
         }
     }
 }

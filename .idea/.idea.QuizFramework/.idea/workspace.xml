@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="" />
+    <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionPopupVM.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionPopupVM.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowSendQuestionPopupSignal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowSendQuestionPopupSignal.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +59,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D1EB443-9232-48B1-8289-94AABE8AE823/5c/f2567ede/TaskCompletionSource`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/fa/0b857751/TestAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/85/ef99f972/UnityAdsShowError.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6A0E661-5EE0-4EA7-AD53-5B38F9316104/fb/4b69d395/IProgress`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EmailSender/EmailSenderToSelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@3.2.3/Runtime/Purchasing/PurchaseEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/06/24646300/IUnityAdsInitializationListener.cs" root0="SKIP_HIGHLIGHTING" />
@@ -93,8 +103,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/IQuestionsFacade.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionsFacade.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/IQuizResultConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Storage/LocalStorage.cs" />
@@ -117,7 +125,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/OpenSupportSignal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowMessagePopupSignal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MessagePopupVM/MessagePopupVM.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Extensions/AsyncOperationExtension.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/VesrionControl/VersionChecker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/RemoteConfigDownloader/SpreadsheetConfigDownloader.cs" />
@@ -144,6 +151,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/SelectLevelVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectLevelVM/LevelButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Analytics/UnityAnalyticsService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/GameLoadingVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionVM.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -156,7 +166,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34991798" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -175,10 +185,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9656">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="9656" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -248,6 +258,8 @@
       <workItem from="1628409930405" duration="4782000" />
       <workItem from="1628573897671" duration="11197000" />
       <workItem from="1628602712638" duration="2130000" />
+      <workItem from="1628929180884" duration="298000" />
+      <workItem from="1628931203966" duration="1397000" />
     </task>
     <servers />
   </component>
@@ -299,6 +311,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/GameLoadingVM.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Unity_Projects\GitHub\QuizFramework\Assets\Scripts\UI\LoadingVM\GameLoadingVM.cs" initialLine="38" containingFunctionPresentation="method 'OnHandleEvent'">
+            <startOffsets>
+              <option value="1138" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1180" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

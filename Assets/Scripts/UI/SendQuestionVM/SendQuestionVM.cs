@@ -126,7 +126,7 @@ namespace QuizFramework.UI
 
         private void ShowPopup(string message)
         {
-            SignalBus.Fire(new ShowSendQuestionPopupSignal(message));
+            SignalBus.Fire(new ShowMessagePopupSignal(message));
         }
 
         private void ReportAnalyticsEvent(EmailSendResult sendResult, string message)

@@ -21,13 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="853eb2b1-76f8-4b20-89c1-767ff4fcd249" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuizFramework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionPopupVM.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionPopupVM.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowSendQuestionPopupSignal.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Signals/ShowSendQuestionPopupSignal.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +52,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D1EB443-9232-48B1-8289-94AABE8AE823/5c/f2567ede/TaskCompletionSource`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/fa/0b857751/TestAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/85/ef99f972/UnityAdsShowError.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6A0E661-5EE0-4EA7-AD53-5B38F9316104/fb/4b69d395/IProgress`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6A0E661-5EE0-4EA7-AD53-5B38F9316104/fb/4b69d395/IProgress`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EmailSender/EmailSenderToSelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@3.2.3/Runtime/Purchasing/PurchaseEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49B6D867-1ECD-41FF-90A6-4A4D5BBC2A4F/06/24646300/IUnityAdsInitializationListener.cs" root0="SKIP_HIGHLIGHTING" />
@@ -103,9 +96,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionsFacade.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/IQuizResultConfig.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/Storage/LocalStorage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Meta/LocalConfigs/QuizResultMessage/QuizResultConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsShowListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Advertisement/UnityAds/UnityAdsService.cs" />
@@ -154,6 +144,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoadingVM/GameLoadingVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuVM/MainMenuVM.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SendQuestionVM/SendQuestionVM.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Meta/QuestionsDatabase/QuestionDatabaseLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Utils/CsvLineParser.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UnitTests/Editor/CsvLineParserTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ttLcPLlxGLOBNDdM8jwiKF9aIQ" />
@@ -260,6 +253,7 @@
       <workItem from="1628602712638" duration="2130000" />
       <workItem from="1628929180884" duration="298000" />
       <workItem from="1628931203966" duration="1397000" />
+      <workItem from="1628951231176" duration="383000" />
     </task>
     <servers />
   </component>
